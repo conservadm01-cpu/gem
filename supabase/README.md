@@ -11,8 +11,10 @@ celular, e o encarregado enxerga a turma de onde estiver.
    gratuita dá conta de uma congregação inteira). Anote a região mais perto
    de você.
 
-2. **Rode as migrações**, na ordem, pelo *SQL Editor* do painel do Supabase —
-   cole o conteúdo de cada arquivo e execute:
+2. **Rode o banco.** O caminho curto é colar o `setup.sql` inteiro no *SQL
+   Editor* do painel e executar uma vez só — ele é a junção das migrações, na
+   ordem. Quem prefere acompanhar passo a passo roda as quatro migrações
+   separadas, nesta ordem:
 
    | arquivo | o que faz |
    |---|---|
@@ -23,6 +25,10 @@ celular, e o encarregado enxerga a turma de onde estiver.
 
    Quem usa a [CLI do Supabase](https://supabase.com/docs/guides/cli) roda
    `supabase db push` e pula este passo.
+
+   As migrações são a fonte da verdade; o `setup.sql` é gerado a partir delas.
+   Depois de mexer em qualquer migração, rode `sh supabase/gerar-setup.sh`
+   para o arquivo de instalação não ficar para trás.
 
 3. **Copie as duas chaves** em *Settings → API*: a *Project URL* e a chave
    `anon`.
