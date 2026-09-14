@@ -463,6 +463,8 @@ textarea { line-height: 1.5; resize: vertical; }
 <body>
 <main id="tela"><p class="aviso">Carregando…</p></main>
 <div id="area-impressao" aria-hidden="true"></div>
+<!-- Endereço do banco. Ausente ou vazio, o app roda só neste aparelho. -->
+<script src="config.js"></script>
 <script>
 const __modulos = {};
 __modulos['aleatorio'] = (function () {
@@ -3668,6 +3670,10 @@ function gravar() {
     // funcionando nesta sessão, só não guarda o progresso.
     console.warn('Não foi possível guardar o progresso:', erro);
   }
+  // Avisa a sincronização, se este app estiver ligado a um banco. A busca
+  // pelo módulo é feita aqui e não lá em cima porque `sincronia` nasce
+  // depois deste módulo.
+  if (__modulos['sincronia']) __modulos['sincronia'].aoGravar();
 }
 
 const progresso = () => ler();
@@ -4718,6 +4724,7 @@ function gravar() {
   } catch (erro) {
     console.warn('Não foi possível guardar o conteúdo:', erro);
   }
+  if (__modulos['sincronia']) __modulos['sincronia'].aoGravar();
 }
 
 const novoId = (prefixo) => `${prefixo}-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 7)}`;
@@ -4819,6 +4826,36 @@ function entrar(alvo, senha, perfil, perfisAceitos) {
   p.entradaVista = true;
   gravar();
   return { ok: true, conta };
+}
+
+/**
+ * Contas vindas do servidor. Elas convivem com as locais: a conta da nuvem
+ * não guarda senha aqui (quem confere é o servidor) e se reconhece pela
+ * marca `nuvem`. A conta local que já virou conta de verdade lá — as duas
+ * ligadas por `conta_local` — sai da lista, para a mesma pessoa não
+ * aparecer duas vezes.
+ */
+function sincronizarContas(lista) {
+  const p = ler();
+  const locais = p.acesso.contas.filter((c) => !c.nuvem);
+  const daNuvem = (lista || []).map((c) => ({
+    id: c.id, perfil: c.perfil, nome: c.nome,
+    instrumento: c.instrumento || '', contaLocal: c.conta_local || '',
+    nuvem: true, senha: '',
+  }));
+  const migradas = new Set(daNuvem.map((c) => c.contaLocal).filter(Boolean));
+  p.acesso.contas = locais.filter((c) => !migradas.has(c.id)).concat(daNuvem);
+  gravar();
+  return daNuvem.length;
+}
+
+/** Abre a sessão com a conta que entrou pelo servidor. */
+function entrarComSessaoDaNuvem({ id, nome, perfil }) {
+  const p = ler();
+  p.sessao = { perfil: perfil || 'aluno', nome: nome || '', id };
+  p.entradaVista = true;
+  gravar();
+  return p.sessao;
 }
 
 function entrarComoAluno(nome) {
@@ -5491,6 +5528,7 @@ function regraDoAluno(contaId, fonte) {
 
 return {
   sessao, perfil, ehAdministrador, ehEncarregado, ehInstrutor, temPermissao, executarComPermissao, contasDeGestao, temSessao, jaPassouPelaEntrada, entrarComoAluno,
+  sincronizarContas, entrarComSessaoDaNuvem,
   senhaDeFabrica, usuarioEncarregado, atualizarEncarregado,
   contas, contaPorId, contaAtual, alunos, cadastrarConta, removerConta,
   entrar, sair, instrutores, cadastrarInstrutor, removerInstrutor,
@@ -6756,6 +6794,375 @@ function resumoDoCurso(curso) {
 return { ORIGEM, V, analisarDocumento, indiceGeral, montarCurso, resumoDoCurso };
 })();
 
+__modulos['nuvem'] = (function () {
+// Conversa com o Supabase por fetch puro, sem biblioteca. São duas APIs:
+// `/auth/v1` cuida de entrar e sair, `/rest/v1` lê e grava as tabelas.
+// Escrever à mão são umas cem linhas, e em troca o app continua sendo um
+// arquivo só, que abre offline sem depender de CDN nenhum.
+//
+// A chave que vai na página é a `anon`, pública. Ela não dá acesso a nada
+// sozinha: quem decide o que cada pessoa enxerga são as políticas de acesso
+// do banco, do lado do servidor.
+
+const CHAVE = 'msa.nuvem.v1';
+const config = (globalThis.MSA_CONFIG || {});
+const BASE = String(config.supabaseUrl || '').trim().replace(/\/+$/, '');
+const PUBLICA = String(config.supabaseAnonKey || '').trim();
+
+const configurada = () => Boolean(BASE && PUBLICA);
+
+let sessao = null;
+let lida = false;
+
+function ler() {
+  if (lida) return sessao;
+  lida = true;
+  try {
+    const bruto = localStorage.getItem(CHAVE);
+    sessao = bruto ? JSON.parse(bruto) : null;
+  } catch (erro) { sessao = null; }
+  return sessao;
+}
+
+function guardar(nova) {
+  sessao = nova;
+  try {
+    if (nova) localStorage.setItem(CHAVE, JSON.stringify(nova));
+    else localStorage.removeItem(CHAVE);
+  } catch (erro) { /* aparelho sem espaço: a sessão vale só enquanto a aba estiver aberta */ }
+}
+
+const usuario = () => { const s = ler(); return s && s.usuario ? s.usuario : null; };
+const token = () => { const s = ler(); return s ? s.token : ''; };
+const expirou = () => { const s = ler(); return !s || !s.expiraEm || Date.now() > s.expiraEm - 30000; };
+
+function guardarEntrada(dados, usuarioAnterior) {
+  if (!dados || !dados.access_token) return null;
+  const u = dados.user || {};
+  guardar({
+    token: dados.access_token,
+    renovacao: dados.refresh_token || '',
+    expiraEm: Date.now() + ((Number(dados.expires_in) || 3600) * 1000),
+    usuario: {
+      id: u.id || (usuarioAnterior && usuarioAnterior.id) || '',
+      email: u.email || (usuarioAnterior && usuarioAnterior.email) || '',
+      nome: (u.user_metadata && u.user_metadata.nome) || (usuarioAnterior && usuarioAnterior.nome) || '',
+      perfil: (usuarioAnterior && usuarioAnterior.perfil) || 'aluno',
+    },
+  });
+  return ler();
+}
+
+/** Mensagem de erro em português, a partir do que o servidor devolveu. */
+function explicar(resposta, corpo) {
+  const dito = (corpo && (corpo.msg || corpo.message || corpo.error_description || corpo.error || corpo.hint)) || '';
+  if (resposta.status === 400 && /invalid login/i.test(dito)) return 'E-mail ou senha não conferem.';
+  if (resposta.status === 400 && /already registered|already been registered/i.test(dito)) return 'Já existe conta com esse e-mail.';
+  if (resposta.status === 401 || resposta.status === 403) return dito || 'Sem permissão para isso.';
+  if (resposta.status === 422) return dito || 'Dados incompletos.';
+  return dito || `O servidor respondeu ${resposta.status}.`;
+}
+
+async function bruto(caminho, { metodo = 'GET', corpo, autenticado = true, cabecalhosExtras } = {}) {
+  const cabecalhos = Object.assign({
+    apikey: PUBLICA,
+    'Content-Type': 'application/json',
+  }, cabecalhosExtras || {});
+  if (autenticado) {
+    const t = token();
+    cabecalhos.Authorization = `Bearer ${t || PUBLICA}`;
+  }
+  const resposta = await fetch(`${BASE}${caminho}`, {
+    method: metodo,
+    headers: cabecalhos,
+    body: corpo === undefined ? undefined : JSON.stringify(corpo),
+  });
+  let dados = null;
+  const texto = await resposta.text();
+  if (texto) { try { dados = JSON.parse(texto); } catch (erro) { dados = texto; } }
+  return { resposta, dados };
+}
+
+/** Troca o token vencido pelo de renovação. Sem ele, a sessão cai. */
+async function renovar() {
+  const s = ler();
+  if (!s || !s.renovacao) return false;
+  const { resposta, dados } = await bruto('/auth/v1/token?grant_type=refresh_token', {
+    metodo: 'POST', corpo: { refresh_token: s.renovacao }, autenticado: false,
+  });
+  if (!resposta.ok) { guardar(null); return false; }
+  guardarEntrada(dados, s.usuario);
+  return true;
+}
+
+/**
+ * Chamada autenticada. Renova o token antes se já venceu, e uma vez depois,
+ * caso o servidor recuse — é o bastante para a sessão atravessar o dia sem
+ * derrubar quem está no meio de uma prova.
+ */
+async function pedir(caminho, opcoes = {}) {
+  if (!configurada()) throw new Error('Nuvem não configurada neste app.');
+  if (expirou()) await renovar();
+  let { resposta, dados } = await bruto(caminho, opcoes);
+  if (resposta.status === 401 && await renovar()) {
+    ({ resposta, dados } = await bruto(caminho, opcoes));
+  }
+  if (!resposta.ok) throw new Error(explicar(resposta, dados));
+  return dados;
+}
+
+// --------------------------------------------------------------- acesso
+
+async function entrar(email, senha) {
+  if (!configurada()) return { ok: false, erro: 'Este app não está ligado a um banco.' };
+  const { resposta, dados } = await bruto('/auth/v1/token?grant_type=password', {
+    metodo: 'POST', corpo: { email: String(email || '').trim(), password: String(senha || '') }, autenticado: false,
+  });
+  if (!resposta.ok) return { ok: false, erro: explicar(resposta, dados) };
+  guardarEntrada(dados);
+  const perfil = await meuPerfil();
+  return { ok: true, perfil };
+}
+
+async function cadastrar(email, senha, nome) {
+  if (!configurada()) return { ok: false, erro: 'Este app não está ligado a um banco.' };
+  const { resposta, dados } = await bruto('/auth/v1/signup', {
+    metodo: 'POST',
+    corpo: { email: String(email || '').trim(), password: String(senha || ''), data: { nome: String(nome || '').trim() } },
+    autenticado: false,
+  });
+  if (!resposta.ok) return { ok: false, erro: explicar(resposta, dados) };
+  // Com a confirmação de e-mail ligada no Supabase, o cadastro não devolve
+  // sessão: a pessoa precisa clicar no link antes de entrar.
+  if (!dados || !dados.access_token) {
+    return { ok: true, confirmar: true };
+  }
+  guardarEntrada(dados);
+  const perfil = await meuPerfil();
+  return { ok: true, perfil };
+}
+
+function sair() {
+  const s = ler();
+  if (s && s.token) {
+    // Sem esperar resposta: o que importa é apagar a sessão daqui.
+    bruto('/auth/v1/logout', { metodo: 'POST' }).catch(() => {});
+  }
+  guardar(null);
+}
+
+/** O perfil de quem entrou, já com o papel que o banco reconhece. */
+async function meuPerfil() {
+  const u = usuario();
+  if (!u || !u.id) return null;
+  const linhas = await pedir(`/rest/v1/perfis?select=id,nome,perfil,instrumento,conta_local,xp&id=eq.${encodeURIComponent(u.id)}`);
+  const perfil = Array.isArray(linhas) && linhas[0] ? linhas[0] : null;
+  if (perfil) {
+    const s = ler();
+    guardar(Object.assign({}, s, { usuario: Object.assign({}, s.usuario, {
+      nome: perfil.nome, perfil: perfil.perfil, contaLocal: perfil.conta_local || '',
+    }) }));
+  }
+  return perfil;
+}
+
+/** Todas as contas que este usuário tem direito de enxergar. */
+async function perfis() {
+  return pedir('/rest/v1/perfis?select=id,nome,perfil,instrumento,conta_local&order=nome');
+}
+
+/** Liga a conta desta nuvem ao id que ela tinha na instalação offline. */
+async function ligarContaLocal(idLocal) {
+  const u = usuario();
+  if (!u || !u.id || !idLocal) return null;
+  return pedir(`/rest/v1/perfis?id=eq.${encodeURIComponent(u.id)}`, {
+    metodo: 'PATCH', corpo: { conta_local: idLocal },
+    cabecalhosExtras: { Prefer: 'return=representation' },
+  });
+}
+
+const chamar = (nome, argumentos) => pedir(`/rest/v1/rpc/${nome}`, { metodo: 'POST', corpo: argumentos || {} });
+
+return { configurada, usuario, entrar, cadastrar, sair, meuPerfil, perfis, ligarContaLocal, chamar, renovar };
+})();
+
+__modulos['sincronia'] = (function () {
+// Junta o que está no aparelho com o que está no banco.
+//
+// Progresso do aluno vai e volta sozinho, porque a junção é feita no
+// servidor por regras que nunca apagam esforço (união das lições lidas,
+// maior pontuação, todas as tentativas). Dois aparelhos ou dois dias
+// offline dão sempre no mesmo resultado, sem ninguém decidir nada.
+//
+// Conteúdo do painel é diferente: publicar substitui o que está no banco,
+// removidos inclusive. Por isso só sobe quando o encarregado manda, nunca
+// sozinho — e, pelo mesmo motivo, o app não baixa conteúdo por cima do
+// painel de quem está cadastrando.
+
+const nuvem = __modulos['nuvem'];
+const banco = __modulos['armazenamento'];
+const editavel = __modulos['conteudo/editavel'];
+
+let estado = 'desligada';   // desligada · fora · pronta · sincronizando · ok · erro
+let recado = '';
+let aplicando = false;      // evita que gravar o que veio do banco peça outra subida
+let agendado = null;
+const ouvintes = [];
+
+function definir(novo, texto) {
+  estado = novo;
+  recado = texto || '';
+  ouvintes.forEach((f) => { try { f(situacao()); } catch (erro) { /* um ouvinte ruim não derruba os outros */ } });
+}
+
+function situacao() {
+  return {
+    estado, recado,
+    configurada: nuvem.configurada(),
+    usuario: nuvem.usuario(),
+    online: navigator.onLine !== false,
+  };
+}
+
+const aoMudar = (f) => { ouvintes.push(f); };
+
+const ligada = () => nuvem.configurada() && Boolean(nuvem.usuario());
+const ehGestao = () => {
+  const u = nuvem.usuario();
+  return Boolean(u && (u.perfil === 'encarregado' || u.perfil === 'administrador'));
+};
+
+/** Chamado toda vez que o app grava algo no aparelho. */
+function aoGravar() {
+  if (aplicando || !ligada()) return;
+  clearTimeout(agendado);
+  // Um respiro antes de subir: durante uma prova o progresso é gravado a
+  // cada resposta, e não faz sentido uma viagem à rede por clique.
+  agendado = setTimeout(() => { enviarProgresso().catch(() => {}); }, 2500);
+}
+
+// --------------------------------------------------------------- progresso
+
+async function enviarProgresso() {
+  if (!ligada()) return { ok: false, erro: 'Entre na sua conta para sincronizar.' };
+  if (navigator.onLine === false) { definir('fora', 'Sem internet: o progresso sobe quando a rede voltar.'); return { ok: false, erro: recado }; }
+  try {
+    definir('sincronizando', 'Guardando o progresso…');
+    const local = JSON.parse(banco.exportar());
+    const juntado = await nuvem.chamar('sincronizar_progresso', { dados: local });
+    if (juntado && typeof juntado === 'object') {
+      aplicando = true;
+      try { banco.importar(JSON.stringify(juntado)); } finally { aplicando = false; }
+    }
+    definir('ok', `Progresso guardado ${agora()}.`);
+    return { ok: true };
+  } catch (erro) {
+    definir('erro', erro.message || 'Não deu para guardar agora.');
+    return { ok: false, erro: recado };
+  }
+}
+
+// ---------------------------------------------------------------- conteúdo
+
+/**
+ * Traz o conteúdo do banco para este aparelho.
+ *
+ * Em automático, pula quem cuida do painel: baixar substitui métodos e
+ * turmas locais, e apagar sem querer o que ainda não foi publicado seria
+ * pior do que ficar um dia desatualizado.
+ */
+async function baixarConteudo({ automatico = false } = {}) {
+  if (!ligada()) return { ok: false, erro: 'Entre na sua conta.' };
+  if (automatico && ehGestao()) return { ok: false, motivo: 'painel' };
+  try {
+    definir('sincronizando', 'Buscando o conteúdo…');
+    const contas = await nuvem.perfis();
+    const conteudo = await nuvem.chamar('meu_conteudo', {});
+    aplicando = true;
+    try {
+      if (Array.isArray(contas)) editavel.sincronizarContas(contas);
+      if (conteudo && Array.isArray(conteudo.metodos)) editavel.importarTudo(conteudo);
+    } finally { aplicando = false; }
+    definir('ok', `Conteúdo atualizado ${agora()}.`);
+    return { ok: true };
+  } catch (erro) {
+    definir('erro', erro.message || 'Não deu para buscar o conteúdo.');
+    return { ok: false, erro: recado };
+  }
+}
+
+/** Sobe o conteúdo deste aparelho, substituindo o que está no banco. */
+async function publicarConteudo() {
+  if (!ligada()) return { ok: false, erro: 'Entre na sua conta.' };
+  if (!ehGestao()) return { ok: false, erro: 'Só o encarregado ou o administrador publica conteúdo.' };
+  try {
+    definir('sincronizando', 'Publicando o conteúdo…');
+    const local = JSON.parse(editavel.exportarTudo());
+    // As contas locais não sobem: no banco quem manda são as contas de
+    // verdade, com senha verificada pelo servidor.
+    delete local.acesso;
+    const volta = await nuvem.chamar('publicar_conteudo', { dados: local });
+    const avisos = (volta && volta.avisos) || [];
+    definir('ok', avisos.length ? `Publicado com ressalvas: ${avisos.join(' · ')}` : `Conteúdo publicado ${agora()}.`);
+    return { ok: true, avisos };
+  } catch (erro) {
+    definir('erro', erro.message || 'Não deu para publicar.');
+    return { ok: false, erro: recado };
+  }
+}
+
+// ------------------------------------------------------------------ rotina
+
+const agora = () => new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+
+/** Houve estudo de verdade aqui, ou é só a estrutura vazia das fases? */
+const temEstudo = (p) => Boolean(p && (
+  (p.xp || 0) > 0
+  || (p.certificados || []).length
+  || Object.keys(p.fases || {}).some((chave) => {
+    const f = p.fases[chave] || {};
+    return (f.licoesLidas || []).length || (f.tentativas || []).length || Object.keys(f.jogos || {}).length;
+  })
+));
+
+/**
+ * Passa a usar a conta do servidor, levando junto o que já tinha sido
+ * estudado neste aparelho antes de entrar.
+ *
+ * Quem estuda primeiro e cria conta depois é o caso comum — e sem isto o
+ * esforço ficaria órfão numa chave antiga do navegador. Mandar o progresso
+ * anterior como se fosse desta conta é seguro justamente porque a junção do
+ * servidor é união: nada se perde e nada se duplica.
+ */
+async function adotarConta(perfilDaNuvem, progressoAnterior) {
+  banco.usarConta((perfilDaNuvem && perfilDaNuvem.id) || '');
+  if (temEstudo(progressoAnterior)) {
+    try {
+      await nuvem.chamar('sincronizar_progresso', { dados: progressoAnterior });
+    } catch (erro) {
+      definir('erro', 'Entrou, mas o que você estudou antes ainda não subiu. Tente "Guardar agora".');
+    }
+  }
+  await rotina();
+}
+
+/** O de sempre ao abrir o app e ao voltar a internet. */
+async function rotina() {
+  if (!nuvem.configurada()) { definir('desligada', ''); return; }
+  if (!nuvem.usuario()) { definir('pronta', 'Entre na sua conta para guardar no servidor.'); return; }
+  if (navigator.onLine === false) { definir('fora', 'Sem internet: o que você estudar sobe quando a rede voltar.'); return; }
+  await baixarConteudo({ automatico: true });
+  await enviarProgresso();
+}
+
+if (nuvem.configurada()) {
+  window.addEventListener('online', () => { rotina().catch(() => {}); });
+  window.addEventListener('offline', () => definir('fora', 'Sem internet: o progresso fica guardado aqui.'));
+}
+
+return { situacao, aoMudar, aoGravar, enviarProgresso, baixarConteudo, publicarConteudo, rotina, adotarConta, ehGestao };
+})();
+
 __modulos['app'] = (function () {
 // Casca do aplicativo: navegação, telas e ligação entre conteúdo, jogos,
 // avaliação e certificado.
@@ -6775,6 +7182,8 @@ const progressao = __modulos['progressao'];
 const auditoria = __modulos['auditoria'];
 const { PERMISSOES, PERFIS, rotuloDoPerfil } = __modulos['permissoes'];
 const { criarAleatorio, embaralhar, novaSemente } = __modulos['aleatorio'];
+const nuvem = __modulos['nuvem'];
+const sincronia = __modulos['sincronia'];
 
 const tela = () => document.getElementById('tela');
 const escapar = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -7182,6 +7591,88 @@ const etiquetaPerfil = () => {
 };
 
 // ------------------------------------------------------------------- acesso
+// ------------------------------------------------------------------ nuvem
+
+function telaNuvem() {
+  const situacao = sincronia.situacao();
+
+  if (!situacao.configurada) {
+    return `${cabecalho('Guardar no servidor', '#/acesso')}
+      <section class="admin">
+        <p>Este app está funcionando só neste aparelho: o que você estuda fica
+        guardado aqui e não sai daqui.</p>
+        <p class="mini">Para guardar num servidor — e o progresso acompanhar a
+        troca de celular, e o encarregado ver a turma de onde estiver — é
+        preciso preencher o endereço do banco no arquivo <b>config.js</b>. O
+        passo a passo está em <b>supabase/README.md</b>, no repositório.</p>
+      </section>`;
+  }
+
+  if (!situacao.usuario) {
+    return `${cabecalho('Guardar no servidor', '#/acesso')}
+      <section class="admin">
+        <p class="mini">Entrando com a sua conta, o que você estudar fica guardado
+        no servidor e volta em qualquer aparelho. Sem entrar, o app continua
+        funcionando normalmente, guardando tudo aqui.</p>
+        <label for="nu-email">E-mail</label>
+        <input id="nu-email" type="email" autocomplete="username" maxlength="120">
+        <label for="nu-senha">Senha</label>
+        <input id="nu-senha" type="password" autocomplete="current-password" maxlength="72">
+        <div class="acoes"><button class="botao grande" data-acao="adm:nuvem-entrar">Entrar</button></div>
+        <h3>Ainda não tenho conta</h3>
+        <label for="nu-nome">Nome</label>
+        <input id="nu-nome" type="text" autocomplete="name" maxlength="60" placeholder="Como quer ser chamado">
+        <p class="mini">A conta nova entra como aluno. Quem cuida do painel promove depois.</p>
+        <div class="acoes"><button class="botao secundario" data-acao="adm:nuvem-cadastrar">Criar conta</button></div>
+        ${situacao.recado ? `<p class="mini">${escapar(situacao.recado)}</p>` : ''}
+      </section>`;
+  }
+
+  const u = situacao.usuario;
+  const gestao = sincronia.ehGestao();
+  return `${cabecalho('Guardar no servidor', '#/')}
+    <section class="admin">
+      <p>Conta: <b>${escapar(u.nome || u.email)}</b> — ${escapar(rotuloDoPerfil(u.perfil))}</p>
+      <p class="mini">${escapar(situacao.recado || (situacao.online ? 'Tudo em dia.' : 'Sem internet no momento.'))}</p>
+
+      <h3>Progresso</h3>
+      <p class="mini">Sobe sozinho enquanto você estuda. O que foi feito em dois
+      aparelhos se junta: lição lida continua lida, e a melhor nota continua sendo
+      a melhor.</p>
+      <div class="acoes"><button class="botao" data-acao="adm:nuvem-sincronizar">Guardar agora</button></div>
+
+      <h3>Conteúdo</h3>
+      ${gestao
+        ? `<p class="mini">Baixar traz o conteúdo do servidor por cima do que está
+           neste aparelho. Publicar faz o contrário: o que está aqui passa a valer
+           no servidor, <b>inclusive o que foi apagado</b>. Por isso nenhum dos dois
+           acontece sozinho no painel.</p>
+           <div class="acoes">
+             <button class="botao secundario" data-acao="adm:nuvem-baixar">Baixar conteúdo</button>
+             <button class="botao" data-acao="adm:nuvem-publicar">Publicar conteúdo</button>
+           </div>`
+        : `<p class="mini">O conteúdo vem do servidor sozinho, sempre que o app abre.</p>
+           <div class="acoes"><button class="botao secundario" data-acao="adm:nuvem-baixar">Buscar agora</button></div>`}
+
+      ${(() => {
+        // Quem já usava o app antes do servidor existir tem matrícula e
+        // histórico presos a um id que só vale neste aparelho. Ligar as duas
+        // contas é o que faz esse passado encontrar o dono lá.
+        const antigas = editavel.contas().filter((c) => !c.nuvem && c.perfil === u.perfil);
+        if (u.contaLocal || !antigas.length) return '';
+        return `<h3>Conta antiga deste aparelho</h3>
+          <p class="mini">Se você já estudava aqui antes, ligue a conta antiga à de
+          agora para as matrículas e o histórico reconhecerem você.</p>
+          <select id="nu-local">${antigas.map((c) => `<option value="${escapar(c.id)}">${escapar(c.nome)}</option>`).join('')}</select>
+          <div class="acoes"><button class="botao secundario" data-acao="adm:nuvem-ligar">Ligar as duas contas</button></div>`;
+      })()}
+
+      <h3>Sair</h3>
+      <p class="mini">Sair daqui não apaga nada: o que está neste aparelho continua.</p>
+      <div class="acoes"><button class="botao perigo" data-acao="adm:nuvem-sair">Sair do servidor</button></div>
+    </section>`;
+}
+
 function telaEntrada() {
   const s = editavel.sessao();
   if (s) return telaInicial();
@@ -7206,7 +7697,9 @@ function telaEntrada() {
         <small>Incluir, editar e publicar conteúdo; administrar o sistema</small>
       </div>
     </div>
-    <p class="mini centro">Tudo fica guardado neste aparelho.</p>
+    ${sincronia.situacao().configurada
+      ? '<p class="mini centro" data-ir="#/nuvem" style="text-decoration: underline">Guardar no servidor e estudar em outro aparelho</p>'
+      : '<p class="mini centro">Tudo fica guardado neste aparelho.</p>'}
   </section>`;
 }
 
@@ -8506,6 +8999,98 @@ function acaoPainel(acao, botao) {
   const questaoId = botao.dataset.q;
   const indice = botao.dataset.i !== undefined ? Number(botao.dataset.i) : null;
 
+  // -------------------------------------------------------------- nuvem
+  // Tudo aqui é conversa com a rede: o botão trava enquanto espera, e a
+  // tela é redesenhada quando a resposta chega.
+  if (nome.startsWith('nuvem-')) {
+    const terminar = () => { botao.disabled = false; desenhar(); };
+    const falhar = (erro) => { botao.disabled = false; recado(erro); desenhar(); };
+    botao.disabled = true;
+
+    if (nome === 'nuvem-entrar') {
+      const email = campo('nu-email');
+      const senha = campo('nu-senha');
+      if (!email || !senha) return falhar('Informe e-mail e senha.'), true;
+      nuvem.entrar(email, senha).then((r) => {
+        if (!r.ok) return falhar(r.erro);
+        const p = r.perfil || {};
+        // Lido antes de trocar de conta: é o progresso de quem estudava
+        // neste aparelho até agora, e ele vai junto para a conta.
+        const anterior = JSON.parse(banco.exportar());
+        editavel.entrarComSessaoDaNuvem({ id: p.id, nome: p.nome, perfil: p.perfil });
+        auditoria.registrar(auditoria.ACOES.LOGIN, { entidade: 'conta', entidadeId: p.id || '', detalhes: `${p.perfil || 'aluno'} (servidor)` });
+        return sincronia.adotarConta(p, anterior).then(() => {
+          if (p.nome) banco.definirAluno(p.nome);
+          terminar();
+        });
+      }).catch((erro) => falhar(erro.message || 'Não deu para entrar.'));
+      return true;
+    }
+
+    if (nome === 'nuvem-cadastrar') {
+      const email = campo('nu-email');
+      const senha = campo('nu-senha');
+      const quem = campo('nu-nome');
+      if (!email || senha.length < 6) return falhar('Informe o e-mail e uma senha de pelo menos 6 caracteres.'), true;
+      if (!quem) return falhar('Informe o nome.'), true;
+      nuvem.cadastrar(email, senha, quem).then((r) => {
+        if (!r.ok) return falhar(r.erro);
+        if (r.confirmar) {
+          botao.disabled = false;
+          recado('Conta criada. Confirme pelo link enviado no e-mail e depois entre por aqui.');
+          return desenhar();
+        }
+        const p = r.perfil || {};
+        const anterior = JSON.parse(banco.exportar());
+        editavel.entrarComSessaoDaNuvem({ id: p.id, nome: p.nome, perfil: p.perfil });
+        return sincronia.adotarConta(p, anterior).then(() => {
+          if (p.nome) banco.definirAluno(p.nome);
+          terminar();
+        });
+      }).catch((erro) => falhar(erro.message || 'Não deu para criar a conta.'));
+      return true;
+    }
+
+    if (nome === 'nuvem-sair') {
+      nuvem.sair();
+      editavel.sair();
+      ir('#/acesso');
+      terminar();
+      return true;
+    }
+
+    if (nome === 'nuvem-sincronizar') {
+      sincronia.enviarProgresso().then(terminar).catch(() => terminar());
+      return true;
+    }
+
+    if (nome === 'nuvem-baixar') {
+      sincronia.baixarConteudo().then(terminar).catch(() => terminar());
+      return true;
+    }
+
+    if (nome === 'nuvem-publicar') {
+      if (!pedeConfirmacao(botao, 'Publicar mesmo?')) { botao.disabled = false; return true; }
+      sincronia.publicarConteudo().then((r) => {
+        if (!r.ok) return falhar(r.erro);
+        auditoria.registrar(auditoria.ACOES.PUBLICAR_METODO, { entidade: 'nuvem', detalhes: 'conteúdo publicado no servidor' });
+        terminar();
+      }).catch((erro) => falhar(erro.message || 'Não deu para publicar.'));
+      return true;
+    }
+
+    if (nome === 'nuvem-ligar') {
+      const idLocal = campo('nu-local') || (document.getElementById('nu-local') || {}).value || '';
+      if (!idLocal) return falhar('Escolha a conta antiga.'), true;
+      nuvem.ligarContaLocal(idLocal).then(() => nuvem.meuPerfil()).then(terminar)
+        .catch((erro) => falhar(erro.message || 'Não deu para ligar as contas.'));
+      return true;
+    }
+
+    botao.disabled = false;
+    return true;
+  }
+
   // ------------------------------------------------------------- acesso
   if (nome === 'entrar-encarregado') {
     const r = editavel.entrar(campo('en-usuario'), campo('en-senha'), null, ['administrador', 'encarregado']);
@@ -9034,6 +9619,7 @@ function desenhar() {
     else if (partes[2] === 'prova') html = telaProvaCustom(partes[1], partes[3]);
     else html = telaMetodo(partes[1]);
   }
+  else if (partes[0] === 'nuvem') html = telaNuvem();
   else if (partes[0] === 'sobre') html = telaSobre();
   else if (partes[0] === 'certificados') html = telaCertificados();
   else if (partes[0] === 'certificado') html = telaCertificado(Number(partes[1]));
@@ -9258,6 +9844,18 @@ document.addEventListener('change', mudancas);
 window.addEventListener('hashchange', desenhar);
 window.addEventListener('DOMContentLoaded', desenhar);
 if (document.readyState !== 'loading') desenhar();
+
+// Ao abrir: se este app estiver ligado a um banco e houver sessão, busca o
+// conteúdo e sobe o progresso. Falha de rede aqui não pode travar nada — o
+// app já está desenhado e funcionando com o que tem no aparelho.
+sincronia.rotina().catch(() => {});
+
+// A tela da nuvem é a única que mostra o andamento da sincronização, então é
+// a única que se redesenha quando ele muda.
+sincronia.aoMudar(() => {
+  const rota = window.location.hash.replace(/^#/, '').split('/').filter(Boolean)[0];
+  if (rota === 'nuvem') desenhar();
+});
 
 
 

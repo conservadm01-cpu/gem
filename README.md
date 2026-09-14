@@ -32,11 +32,21 @@ progresso, avaliar instrutores e emitir certificados para impressão.
 permite refazer uma avaliação exatamente como ela caiu e conferir um
 certificado sem guardar as perguntas inteiras.
 
-## Privacidade
+## Onde os dados ficam
 
-O progresso fica guardado no próprio aparelho (`localStorage`). Nada é enviado
+**Do jeito que vem, tudo fica no aparelho** (`localStorage`) e nada é enviado
 para servidor nenhum. Há exportação e importação do progresso pelo painel, para
 trocar de aparelho ou fazer cópia de segurança.
+
+**Ligando um banco**, o progresso passa a acompanhar a pessoa: ela estuda no
+celular, entra pelo computador e continua de onde parou, e o encarregado
+enxerga a turma de onde estiver. É opcional e não muda nada de quem não ligar
+— sem internet, o app continua funcionando igual e sobe o que foi estudado
+quando a rede voltar.
+
+O passo a passo está em [`supabase/README.md`](supabase/README.md): criar o
+projeto, rodar as quatro migrações e preencher o `config.js`. O esquema, as
+políticas de acesso e as regras de junção também estão explicados lá.
 
 A única busca externa do app é o [pdf.js](https://mozilla.github.io/pdf.js/)
 pelo cdnjs, carregado só quando se importa um PDF para gerar um curso. Sem
@@ -58,10 +68,13 @@ em `https://<usuario>.github.io/<repositorio>/`.
 
 ```
 index.html   o aplicativo inteiro (HTML, CSS e JavaScript)
+config.js    endereço do banco; vazio = só neste aparelho
+supabase/    migrações do banco e o passo a passo para ligá-lo
 .nojekyll    impede o Jekyll de mexer nos arquivos publicados
 .github/workflows/pages.yml   publicação automática no GitHub Pages
 ```
 
 O JavaScript é organizado em módulos internos (`__modulos`): sorteio com
-semente, banco de dados do progresso, motor de questões, jogos, teclado,
-análise de documento e montagem de curso, telas e roteamento.
+semente, armazenamento do progresso, motor de questões, jogos, teclado,
+análise de documento e montagem de curso, ligação com o servidor e
+sincronização, telas e roteamento.
