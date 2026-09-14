@@ -5685,12 +5685,22 @@ __modulos['importador'] = (function () {
 // fases, lições e o texto de cada uma. A proposta NUNCA é aplicada sozinha —
 // o encarregado confere, edita e só então manda criar.
 //
-// O leitor de PDF (pdf.js) é baixado na hora do primeiro uso. Sem internet,
-// ou se a moldura do app bloquear scripts de fora, o caminho é TXT, MD ou
-// colar o texto direto.
+// O leitor de PDF (pdf.js) vem junto com o app, na pasta `vendor`. Ficava numa
+// CDN, e era justamente por aí que a leitura de PDF parava: bloqueador de
+// anúncios, rede de trabalho e moldura de aplicativo barram domínio de fora, e
+// o app ficava sem leitor sem ter culpa nenhuma. Servido junto, funciona
+// inclusive offline.
+//
+// A CDN continua como reserva, para quem copiou só o index.html e não tem a
+// pasta ao lado.
 
-const PDFJS = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js';
-const PDFJS_WORKER = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+const PDFJS_LOCAL = new URL('vendor/pdf.min.js', document.baseURI).href;
+const PDFJS_WORKER_LOCAL = new URL('vendor/pdf.worker.min.js', document.baseURI).href;
+const PDFJS_CDN = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js';
+const PDFJS_WORKER_CDN = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+// Aponta para o worker da origem que realmente carregou.
+let PDFJS_WORKER = PDFJS_WORKER_LOCAL;
 
 // Estado do worker, para a tela poder avisar quando a leitura vai ser mais
 // lenta: 'proprio' = worker de verdade, 'principal' = tudo na mesma linha.
@@ -5782,18 +5792,36 @@ async function prepararWorker(pdfjs) {
   modoDoWorker = (await workerFunciona(PDFJS_WORKER)) ? 'proprio' : 'principal';
 }
 
-function carregarLeitorDePdf() {
-  if (window.pdfjsLib) return prepararWorker(window.pdfjsLib).then(() => window.pdfjsLib);
+function carregarScript(endereco) {
   return new Promise((resolver, rejeitar) => {
     const script = document.createElement('script');
-    script.src = PDFJS;
-    script.onload = () => {
-      if (!window.pdfjsLib) return rejeitar(new Error('O leitor de PDF carregou pela metade. Tente de novo.'));
-      prepararWorker(window.pdfjsLib).then(() => resolver(window.pdfjsLib));
-    };
-    script.onerror = () => rejeitar(new Error('Não consegui baixar o leitor de PDF. Conecte-se à internet nesta primeira vez, ou use um arquivo TXT/MD, ou cole o texto.'));
+    script.src = endereco;
+    script.onload = () => resolver();
+    script.onerror = () => rejeitar(new Error(`não carregou ${endereco}`));
     document.head.appendChild(script);
   });
+}
+
+/** Primeiro o leitor que vem junto; só se ele faltar, o da CDN. */
+async function carregarLeitorDePdf() {
+  if (window.pdfjsLib) {
+    await prepararWorker(window.pdfjsLib);
+    return window.pdfjsLib;
+  }
+  const origens = [
+    { leitor: PDFJS_LOCAL, worker: PDFJS_WORKER_LOCAL },
+    { leitor: PDFJS_CDN, worker: PDFJS_WORKER_CDN },
+  ];
+  for (const origem of origens) {
+    try {
+      await carregarScript(origem.leitor);
+      if (!window.pdfjsLib) continue;
+      PDFJS_WORKER = origem.worker;
+      await prepararWorker(window.pdfjsLib);
+      return window.pdfjsLib;
+    } catch (erro) { /* tenta a próxima origem */ }
+  }
+  throw new Error('Não consegui carregar o leitor de PDF. Confira se a pasta "vendor" está junto do app; se estiver usando bloqueador de anúncios, desligue nesta página. Enquanto isso dá para usar TXT, MD ou colar o texto.');
 }
 
 const lerTexto = (arquivo) => new Promise((resolver, rejeitar) => {

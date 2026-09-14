@@ -48,9 +48,10 @@ O passo a passo está em [`supabase/README.md`](supabase/README.md): criar o
 projeto, rodar as quatro migrações e preencher o `config.js`. O esquema, as
 políticas de acesso e as regras de junção também estão explicados lá.
 
-A única busca externa do app é o [pdf.js](https://mozilla.github.io/pdf.js/)
-pelo cdnjs, carregado só quando se importa um PDF para gerar um curso. Sem
-internet, o resto do app continua funcionando normalmente.
+O app não busca nada de terceiros. O [pdf.js](https://mozilla.github.io/pdf.js/),
+usado para ler PDF na geração de cursos, vem junto em `vendor/` — antes vinha
+de uma CDN, e era aí que a leitura de PDF parava quando um bloqueador de
+anúncios ou uma rede de trabalho barrava o domínio de fora.
 
 ## Como usar
 
@@ -69,6 +70,7 @@ em `https://<usuario>.github.io/<repositorio>/`.
 ```
 index.html   o aplicativo inteiro (HTML, CSS e JavaScript)
 config.js    endereço do banco; vazio = só neste aparelho
+vendor/      pdf.js, para ler PDF sem depender de CDN
 supabase/    migrações do banco e o passo a passo para ligá-lo
 .nojekyll    impede o Jekyll de mexer nos arquivos publicados
 .github/workflows/pages.yml   publicação automática no GitHub Pages
