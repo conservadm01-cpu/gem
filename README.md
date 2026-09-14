@@ -49,9 +49,10 @@ offline.
 
 **Publicado no GitHub Pages:** o fluxo de trabalho em
 `.github/workflows/pages.yml` publica o repositório inteiro a cada push no
-branch padrão. O próprio fluxo liga o Pages na primeira execução; à mão, é em
-**Settings → Pages**, escolhendo **GitHub Actions** como origem. O endereço
-fica em `https://<usuario>.github.io/<repositorio>/`.
+branch padrão. Antes da primeira publicação é preciso ligar o Pages uma vez em
+**Settings → Pages**, escolhendo **GitHub Actions** como origem — o token do
+fluxo não tem permissão para criar o site sozinho. Feito isso, o endereço fica
+em `https://<usuario>.github.io/<repositorio>/`.
 
 ## Estrutura
 
