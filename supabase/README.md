@@ -22,6 +22,7 @@ celular, e o encarregado enxerga a turma de onde estiver.
    | `migrations/0002_funcoes.sql`   | papéis, criação de perfil e a junção do progresso |
    | `migrations/0003_politicas.sql` | quem enxerga o quê (Row Level Security) |
    | `migrations/0004_conteudo.sql`  | conteúdo do painel indo e voltando |
+   | `migrations/0005_trava_nula.sql`| papel nunca volta NULL (ver abaixo) |
 
    Quem usa a [CLI do Supabase](https://supabase.com/docs/guides/cli) roda
    `supabase db push` e pula este passo.
@@ -162,6 +163,12 @@ Três detalhes que não aparecem na tabela:
   nome editaria o próprio papel junto.
 - **A auditoria só cresce.** Não há política de `update` nem de `delete`, nem
   para o administrador: uma trilha que pode ser reescrita não serve de trilha.
+- **As funções de papel nunca devolvem NULL** (`0005`). Quem não tem linha em
+  `perfis` fazia `papel_atual()` devolver NULL, e numa guarda escrita como
+  `if not tem_gestao()` o `not NULL` é NULL — que não é verdadeiro, então o
+  `if` não entrava. As políticas seguraram a gravação, porque para elas NULL
+  já vale como "não pode", mas a guarda da função dependia disso. Agora as
+  duas funções devolvem sempre verdadeiro ou falso.
 
 ## Trazer para a nuvem quem já usava o app
 

@@ -7,6 +7,6 @@
 // de acesso do banco (supabase/migrations/0003_politicas.sql), não esta
 // chave. A chave `service_role` NUNCA entra aqui: ela ignora as políticas.
 window.MSA_CONFIG = {
-  supabaseUrl: '',
-  supabaseAnonKey: '',
+  supabaseUrl: 'https://jmxveadolleqrmpyqywy.supabase.co',
+  supabaseAnonKey: 'sb_publishable_iXgqRcohIdjql0o7tUxvRg_hfwrfFsS',
 };

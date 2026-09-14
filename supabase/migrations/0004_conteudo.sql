@@ -166,7 +166,12 @@ declare
   k        integer;
   avisos   text[] := '{}';
 begin
-  if not public.tem_gestao() then
+  -- Duas recusas, e `is not true` em vez de `not`: assim a guarda vale mesmo
+  -- para quem não tem linha em `perfis`, caso em que o papel viria NULL.
+  if auth.uid() is null then
+    raise exception 'Entre na sua conta para publicar conteúdo.';
+  end if;
+  if public.tem_gestao() is not true then
     raise exception 'Só o encarregado ou o administrador publica conteúdo.';
   end if;
 
