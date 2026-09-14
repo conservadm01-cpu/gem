@@ -48,8 +48,8 @@ internet, o resto do app continua funcionando normalmente.
 offline.
 
 **Publicado no GitHub Pages:** o fluxo de trabalho em
-`.github/workflows/pages.yml` publica o repositório inteiro a cada push na
-`main`. Para ligar, é só ir em **Settings → Pages** e escolher **GitHub
+`.github/workflows/pages.yml` publica o repositório inteiro a cada push no
+branch padrão. Para ligar, vá em **Settings → Pages** e escolha **GitHub
 Actions** como origem. O endereço fica em
 `https://<usuario>.github.io/<repositorio>/`.
 
