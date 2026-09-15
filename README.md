@@ -24,6 +24,14 @@ toque grande, texto legível ao ar livre e contraste que sobrevive à tela do
 **Jogos:** memória, leitura no pentagrama, fecha o compasso, teclado, ouvido
 (intervalos e alturas), pulso/metrônomo e armadura de clave.
 
+**Relatório de acertos e erros:** cada questão nasce de um gerador — e o
+gerador é o assunto. Guardando o acerto ou erro de cada uma, o app diz não só
+"tirou 60" mas em que o aluno tropeça: *ordem dos acidentes, 85% de erro*. O
+aluno vê o próprio desempenho em **Meus acertos e erros**; com o banco ligado,
+o encarregado vê a turma somada em **Relatório da turma**. Um assunto só entra
+no ranking a partir de 4 questões respondidas — antes disso o percentual diria
+mais sobre o acaso do que sobre a dificuldade.
+
 **Perfis:** aluno, instrutor e encarregado. O painel permite cadastrar métodos,
 fases, lições e questões próprias, montar turmas e níveis, acompanhar o
 progresso, avaliar instrutores e emitir certificados para impressão.

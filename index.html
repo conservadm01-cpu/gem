@@ -450,6 +450,60 @@ textarea { line-height: 1.5; resize: vertical; }
 .rodape-acesso { margin: 22px 0 0; }
 .rodape-acesso .botao { width: 100%; }
 
+
+/* ------------------------------------------------------------ relatório */
+/* Uma cor só para as barras: o comprimento já diz a magnitude, e duas cores
+   próximas seriam indistinguíveis — inclusive para quem enxerga todas elas.
+   O primeiro lugar vem escrito no rótulo, não pintado. */
+:root {
+  --graf-barra: #b85c38;
+  --graf-trilho: #ece7dd;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --graf-barra: #c47a4e; --graf-trilho: #2c313a; }
+}
+:root[data-theme="dark"] { --graf-barra: #c47a4e; --graf-trilho: #2c313a; }
+
+.painel-numeros { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 4px 0 8px; }
+.numero-grande {
+  background: var(--papel); border-radius: var(--raio); padding: 14px 8px;
+  box-shadow: var(--sombra); text-align: center;
+}
+.numero-grande strong { display: block; font-size: 26px; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.numero-grande span { font-size: 11px; color: var(--tinta-fraca); text-transform: uppercase; letter-spacing: .07em; }
+
+.destaque-dificil {
+  background: var(--papel); border-radius: var(--raio); padding: 14px;
+  box-shadow: var(--sombra); border-left: 4px solid var(--graf-barra);
+}
+.destaque-dificil strong { font-size: 18px; }
+.destaque-dificil p { margin: 4px 0 0; }
+
+.barras { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.barras li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 5px 10px; align-items: baseline; }
+.barras .rotulo { min-width: 0; }
+.barras .nome { display: block; overflow-wrap: anywhere; }
+.barras .fase { font-size: 12px; color: var(--tinta-fraca); }
+.barras .valor { text-align: right; white-space: nowrap; }
+.barras .valor strong { font-variant-numeric: tabular-nums; }
+.barras .valor small { display: block; font-size: 11px; color: var(--tinta-fraca); }
+.barras .trilho {
+  grid-column: 1 / -1; height: 10px; border-radius: 5px;
+  background: var(--graf-trilho); overflow: hidden;
+}
+.barras .barra { display: block; height: 100%; border-radius: 5px; background: var(--graf-barra); }
+
+.legenda-grafico { margin-top: 10px; }
+.lista-simples { margin: 0; padding-left: 20px; font-size: 14px; color: var(--tinta-fraca); }
+.rolagem-tabela { overflow-x: auto; }
+.tabela { width: 100%; border-collapse: collapse; font-size: 14px; }
+.tabela th, .tabela td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--linha); }
+.tabela td:first-child strong { display: block; white-space: nowrap; }
+.tabela td:first-child small { color: var(--tinta-fraca); font-size: 12px; }
+.tabela th { font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--tinta-fraca); font-weight: 600; }
+.tabela td:not(:first-child), .tabela th:not(:first-child) { text-align: right; font-variant-numeric: tabular-nums; }
+.centro { text-align: center; }
+
 /* ---------------------------------------------------------- impressão */
 #area-impressao { display: none; }
 @media print {
@@ -3617,7 +3671,105 @@ function universoDaFase(fase) {
 
 const totalDeVariantes = (fase) => universoDaFase(fase).length;
 
-return { GERADORES, geradoresDaFase, universoDaFase, totalDeVariantes };
+
+// ------------------------------------------------------------- assuntos
+
+/**
+ * Nome de cada gerador, para o relatório poder dizer "ordem dos acidentes"
+ * em vez de "f6.ordem-dos-acidentes". Fica numa tabela à parte porque é
+ * texto de tela, não regra de geração — e assim os geradores seguem só
+ * cuidando de montar pergunta.
+ */
+const NOMES_DE_ASSUNTO = {
+  'f1.propriedade': 'Propriedades do som',
+  'f1.propriedade-exemplo': 'Propriedades do som pelo exemplo',
+  'f1.ordem-das-notas': 'Ordem das sete notas',
+  'f1.cifra': 'Cifras das notas',
+  'f1.contagem-na-serie': 'Contar notas na série',
+  'f1.conceitos': 'Conceitos e definições',
+  'f2.clave-linha': 'Linha de apoio das claves',
+  'f2.ler-nota': 'Ler nota no pentagrama',
+  'f2.lugar-da-nota': 'Onde se escreve a nota',
+  'f2.figura-valor': 'Valor das figuras',
+  'f2.equivalencia': 'Equivalência entre figuras',
+  'f2.numero-equivalencia': 'Número de equivalência',
+  'f2.pausas': 'Valor das pausas',
+  'f2.partes-da-nota': 'Partes da nota',
+  'f3.formula-tempos': 'Tempos da fórmula de compasso',
+  'f3.formula-unidade': 'Unidade de tempo',
+  'f3.formula-especie': 'Espécie do compasso',
+  'f3.quantas-figuras': 'Quantas figuras cabem no compasso',
+  'f3.completa-compasso': 'Figura que completa o compasso',
+  'f3.tempo-forte': 'Tempos fortes e fracos',
+  'f3.conducao': 'Movimentos de condução',
+  'f3.conceitos': 'Conceitos e definições',
+  'f4.metronomo': 'Metrônomo e andamento',
+  'f4.media-da-faixa': 'Média da faixa de andamento',
+  'f4.duracao-em-segundos': 'Duração da figura em segundos',
+  'f4.ponto-de-aumento': 'Ponto de aumento',
+  'f4.ligadura': 'Ligadura de valor',
+  'f4.conceitos': 'Conceitos e definições',
+  'f4.compara-valores': 'Comparar durações',
+  'f4.tercina-conta': 'Tercinas',
+  'f5.tom-ou-semitom': 'Tom ou semitom',
+  'f5.acidentes': 'O que cada acidente faz',
+  'f5.altera-nota': 'Alterar a nota com acidente',
+  'f5.tipo-de-semitom': 'Tipo de semitom',
+  'f5.enarmonia': 'Enarmonia',
+  'f5.conceitos': 'Conceitos e definições',
+  'f6.grau-da-escala': 'Graus da escala maior',
+  'f6.quantos-acidentes': 'Quantos acidentes na armadura',
+  'f6.armadura-para-tonalidade': 'Da armadura à tonalidade',
+  'f6.ordem-dos-acidentes': 'Ordem dos acidentes',
+  'f6.escala-tem-acidente': 'Acidentes de cada escala',
+  'f6.proxima-escala': 'Próxima escala no ciclo',
+  'f6.padrao': 'Padrão de tons e semitons',
+  'f7.relativa': 'Tonalidades relativas',
+  'f7.intervalo': 'Identificar o intervalo',
+  'f7.intervalo-tamanho': 'Tamanho do intervalo',
+  'f7.dinamica': 'Sinais de dinâmica',
+  'f7.conceitos': 'Conceitos e definições',
+  'f8.composto-tempos': 'Tempos do compasso composto',
+  'f8.composto-unidade': 'Unidade de tempo no composto',
+  'f8.correspondencia': 'Simples correspondente ao composto',
+  'f8.simples-ou-composto': 'Simples ou composto',
+  'f8.figuras-no-composto': 'Figuras no compasso composto',
+  'f8.conceitos': 'Conceitos e definições',
+  'f8.tempo-em-figuras': 'Divisão do tempo no composto',
+  'f8.conducao-composto': 'Condução do compasso composto',
+  'f9.sincopa-contratempo': 'Síncopa e contratempo',
+  'f9.ritmo-inicial-caso': 'Ritmo inicial do trecho',
+  'f9.conceitos': 'Conceitos e definições',
+  'f9.hinos': 'Hinos acéfalos do hinário',
+  'f9.acefalo-medida': 'Medida do ritmo acéfalo',
+  'f9.padrao-ritmico': 'Padrões rítmicos',
+  'f10.andamento': 'Termos de andamento',
+  'f10.mais-rapido': 'Comparar andamentos',
+  'f10.expressao': 'Termos de expressão',
+  'f10.pontuada-no-contexto': 'Figura pontuada no contexto',
+  'f10.forma': 'Forma: frase e semifrase',
+  'f10.bpm-para-termo': 'Do bpm ao termo de andamento',
+  'f10.classifica-indicacao': 'Classificar a indicação',
+};
+
+/** A fase de um assunto sai do próprio id ('f6.…' é da fase 6). */
+function faseDoAssunto(id) {
+  const m = /^f(\d+)\./.exec(String(id || ''));
+  return m ? Number(m[1]) : null;
+}
+
+/**
+ * Nome de tela do assunto. Um id desconhecido — gerador novo, ou questão de
+ * método cadastrado — vira um rótulo legível em vez de sumir do relatório.
+ */
+function nomeDoAssunto(id) {
+  if (NOMES_DE_ASSUNTO[id]) return NOMES_DE_ASSUNTO[id];
+  const cru = String(id || '').replace(/^f\d+\./, '').replace(/[-_.]+/g, ' ').trim();
+  if (!cru) return 'Sem assunto';
+  return cru.charAt(0).toUpperCase() + cru.slice(1);
+}
+
+return { GERADORES, geradoresDaFase, universoDaFase, totalDeVariantes, nomeDoAssunto, faseDoAssunto };
 })();
 
 __modulos['armazenamento'] = (function () {
@@ -6822,6 +6974,143 @@ function resumoDoCurso(curso) {
 return { ORIGEM, V, analisarDocumento, indiceGeral, montarCurso, resumoDoCurso };
 })();
 
+__modulos['relatorio'] = (function () {
+// Soma de acertos e erros: por fase, e por assunto dentro da fase.
+//
+// O assunto vem do gerador que criou cada questão ('f6.ordem-dos-acidentes'),
+// gravado em cada tentativa desde que a prova é corrigida. Por isso o
+// relatório só enxerga o que foi feito depois disso — provas antigas contam
+// no placar da fase, mas não têm detalhe por assunto.
+
+const banco = __modulos['armazenamento'];
+const { FASES } = __modulos['conteudo/fases'];
+const { nomeDoAssunto, faseDoAssunto } = __modulos['conteudo/geradores'];
+
+// Abaixo disto o percentual mente: errar a única questão de um assunto dá
+// 100% de erro e jogaria esse assunto para o topo da lista. Quem tem pouco
+// dado aparece à parte, sem posição no ranking.
+const MINIMO_PARA_RANQUEAR = 4;
+
+const pct = (parte, todo) => (todo > 0 ? Math.round((parte / todo) * 100) : 0);
+
+const tituloDaFase = (ref) => {
+  const f = FASES.find((x) => String(x.numero) === String(ref));
+  if (f) return `Fase ${f.numero} — ${f.titulo}`;
+  return String(ref).indexOf('m:') === 0 ? 'Método cadastrado' : `Fase ${ref}`;
+};
+
+/** Separa o que dá para ranquear do que ainda tem pouca resposta. */
+function ordenar(assuntos) {
+  const lista = assuntos.map((a) => Object.assign({}, a, {
+    total: a.certas + a.erradas,
+    pctErro: pct(a.erradas, a.certas + a.erradas),
+  }));
+  const firmes = lista.filter((a) => a.total >= MINIMO_PARA_RANQUEAR)
+    .sort((a, b) => b.pctErro - a.pctErro || b.erradas - a.erradas);
+  const poucos = lista.filter((a) => a.total < MINIMO_PARA_RANQUEAR)
+    .sort((a, b) => b.erradas - a.erradas);
+  return { firmes, poucos };
+}
+
+function montar({ porFase, assuntos, alunos = 1 }) {
+  const { firmes, poucos } = ordenar(assuntos);
+  const questoes = porFase.reduce((s, f) => s + f.total, 0);
+  const acertos = porFase.reduce((s, f) => s + f.acertos, 0);
+  return {
+    alunos,
+    resumo: {
+      provas: porFase.reduce((s, f) => s + f.provas, 0),
+      questoes,
+      acertos,
+      erros: questoes - acertos,
+      aproveitamento: pct(acertos, questoes),
+    },
+    porFase: porFase
+      .map((f) => Object.assign({}, f, { titulo: tituloDaFase(f.ref), pctAcerto: pct(f.acertos, f.total) }))
+      .sort((a, b) => a.pctAcerto - b.pctAcerto),
+    porAssunto: firmes,
+    poucoDado: poucos,
+    maisDificil: firmes.length && firmes[0].erradas > 0 ? firmes[0] : null,
+    comDetalhe: firmes.length + poucos.length > 0,
+  };
+}
+
+/** Relatório do próprio aluno, somado do que está neste aparelho. */
+function doAluno() {
+  const p = banco.progresso();
+  const porFase = [];
+  const assuntos = new Map();
+
+  Object.keys(p.fases || {}).forEach((ref) => {
+    const tentativas = (p.fases[ref] || {}).tentativas || [];
+    if (!tentativas.length) return;
+    porFase.push({
+      ref,
+      provas: tentativas.length,
+      acertos: tentativas.reduce((s, t) => s + (t.acertos || 0), 0),
+      total: tentativas.reduce((s, t) => s + (t.total || 0), 0),
+      alunos: 1,
+    });
+    tentativas.forEach((t) => {
+      (t.itens || []).forEach((item) => {
+        if (!item || !item.assunto) return;
+        if (!assuntos.has(item.assunto)) {
+          assuntos.set(item.assunto, {
+            assunto: item.assunto,
+            nome: nomeDoAssunto(item.assunto),
+            fase: faseDoAssunto(item.assunto),
+            certas: 0, erradas: 0, alunos: 1,
+          });
+        }
+        const a = assuntos.get(item.assunto);
+        if (item.certa) a.certas++; else a.erradas++;
+      });
+    });
+  });
+
+  return montar({ porFase, assuntos: [...assuntos.values()] });
+}
+
+/** O mesmo relatório, somado de toda a turma que o servidor deixa ver. */
+function daNuvem(linhasPorAssunto, linhasPorFase) {
+  const assuntos = (linhasPorAssunto || []).map((l) => ({
+    assunto: l.assunto,
+    nome: nomeDoAssunto(l.assunto),
+    fase: faseDoAssunto(l.assunto),
+    certas: Number(l.certas) || 0,
+    erradas: Number(l.erradas) || 0,
+    alunos: Number(l.alunos) || 0,
+  }));
+  const porFase = (linhasPorFase || []).map((l) => ({
+    ref: l.fase_ref,
+    provas: Number(l.tentativas) || 0,
+    acertos: Number(l.acertos) || 0,
+    total: Number(l.total) || 0,
+    alunos: Number(l.alunos) || 0,
+  }));
+  const quantos = porFase.reduce((m, f) => Math.max(m, f.alunos), 0);
+  return montar({ porFase, assuntos, alunos: quantos });
+}
+
+/** Todos os itens que ainda não subiram, no formato que o servidor espera. */
+function itensParaEnviar() {
+  const p = banco.progresso();
+  const fora = [];
+  Object.keys(p.fases || {}).forEach((ref) => {
+    ((p.fases[ref] || {}).tentativas || []).forEach((t) => {
+      if (!t.id || !Array.isArray(t.itens)) return;
+      t.itens.forEach((item) => {
+        if (!item || !item.assunto) return;
+        fora.push({ tentativaId: t.id, indice: item.indice, assunto: item.assunto, certa: Boolean(item.certa) });
+      });
+    });
+  });
+  return fora;
+}
+
+return { MINIMO_PARA_RANQUEAR, doAluno, daNuvem, itensParaEnviar, tituloDaFase };
+})();
+
 __modulos['nuvem'] = (function () {
 // Conversa com o Supabase por fetch puro, sem biblioteca. São duas APIs:
 // `/auth/v1` cuida de entrar e sair, `/rest/v1` lê e grava as tabelas.
@@ -7078,6 +7367,15 @@ async function enviarProgresso() {
     definir('sincronizando', 'Guardando o progresso…');
     const local = JSON.parse(banco.exportar());
     const juntado = await nuvem.chamar('sincronizar_progresso', { dados: local });
+
+    // Os itens vão depois, e nunca antes: cada um se prende a uma tentativa,
+    // que precisa já existir no servidor. Reenviar não duplica.
+    const itens = __modulos['relatorio'].itensParaEnviar();
+    if (itens.length) {
+      try { await nuvem.chamar('sincronizar_itens', { dados: itens }); }
+      catch (erro) { /* o placar já subiu; o detalhe tenta de novo na próxima */ }
+    }
+
     if (juntado && typeof juntado === 'object') {
       aplicando = true;
       try { banco.importar(JSON.stringify(juntado)); } finally { aplicando = false; }
@@ -7279,6 +7577,7 @@ function telaInicial() {
     </section>
     <nav class="atalhos">
       <a data-ir="#/certificados" class="atalho">🏅 Meus certificados</a>
+      <a data-ir="#/relatorio" class="atalho">📊 Meus acertos e erros</a>
       <a data-ir="#/sobre" class="atalho">ℹ️ Sobre o método</a>
     </nav>
     ${minhaTurma || `${editavel.msaVisivel() ? `<h2 class="titulo-secao">Trilha de estudo</h2>
@@ -7497,6 +7796,21 @@ function responder(texto, botao) {
   retorno.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
+/**
+ * Detalhe de cada questão da prova, para o relatório saber em que assunto o
+ * aluno tropeça — e não só que a nota foi 60. O id vem do aparelho porque é
+ * ele que impede a mesma tentativa de entrar duas vezes no servidor.
+ */
+function itensDaCorrecao(resultado) {
+  return resultado.detalhes.map((d, i) => ({
+    indice: i,
+    assunto: d.questao.geradorId || '',
+    certa: Boolean(d.certa),
+  })).filter((item) => item.assunto);
+}
+
+const novaTentativaId = () => `ten-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
+
 function telaResultado(numeroFase) {
   const prova = provaEmCurso;
   const resultado = corrigir(prova, prova.respostas);
@@ -7506,8 +7820,10 @@ function telaResultado(numeroFase) {
     prova.registrada = true;
     banco.registrarUsadas(numeroFase, prova.questoes.map((q) => q.assinatura));
     banco.registrarTentativa(numeroFase, {
+      id: novaTentativaId(),
       data: new Date().toISOString(), acertos: resultado.acertos, total: resultado.total,
       nota: resultado.nota, aprovado: resultado.aprovado, semente: prova.semente,
+      itens: itensDaCorrecao(resultado),
     });
     if (resultado.aprovado) {
       const certificado = montarCertificado({
@@ -7619,6 +7935,167 @@ const etiquetaPerfil = () => {
 };
 
 // ------------------------------------------------------------------- acesso
+// --------------------------------------------------------------- relatório
+
+const relatorio = __modulos['relatorio'];
+
+/**
+ * Barras do assunto mais difícil para o menos.
+ *
+ * A escala é sempre 0 a 100%, nunca o maior valor da lista: encolher o eixo
+ * para caber faria 12% de erro parecer catástrofe. Quando tudo está fácil, as
+ * barras ficam curtas mesmo — e é isso que se quer ler.
+ *
+ * O primeiro lugar é marcado por escrito, não por cor: destaque que só existe
+ * na cor some para quem não distingue as duas.
+ */
+function graficoDeDificuldade(itens) {
+  if (!itens.length) return '';
+  return `<ol class="barras">
+    ${itens.map((a, i) => `<li>
+      <div class="rotulo">
+        <span class="nome">${escapar(a.nome)}</span>
+        <span class="fase">${a.fase ? `Fase ${a.fase}` : 'Método cadastrado'}${i === 0 ? ' · mais difícil' : ''}</span>
+      </div>
+      <div class="valor"><strong>${a.pctErro}%</strong><small>${a.erradas} de ${a.total}</small></div>
+      <div class="trilho" title="${escapar(a.nome)} — ${a.erradas} erro${a.erradas === 1 ? '' : 's'} em ${a.total} questões">
+        <span class="barra" style="width:${a.pctErro === 0 ? 0 : Math.max(1.5, a.pctErro)}%"></span>
+      </div>
+    </li>`).join('')}
+  </ol>
+  <p class="mini legenda-grafico">Cada barra é a parte errada das questões daquele assunto, de 0 a 100%.</p>`;
+}
+
+function corpoDoRelatorio(dados, { turma = false } = {}) {
+  const r = dados.resumo;
+  if (!r.questoes) {
+    return `<p class="aviso">${turma
+      ? 'Nenhuma avaliação foi feita ainda. Conforme os alunos forem fazendo as provas, o relatório se enche sozinho.'
+      : 'Você ainda não fez nenhuma avaliação. Faça a prova de uma fase e o resultado aparece aqui.'}</p>`;
+  }
+
+  const quem = turma
+    ? `${dados.alunos} aluno${dados.alunos === 1 ? '' : 's'} · ${r.provas} prova${r.provas === 1 ? '' : 's'}`
+    : `${r.provas} prova${r.provas === 1 ? '' : 's'} feita${r.provas === 1 ? '' : 's'}`;
+
+  return `
+    <section class="painel-numeros">
+      <div class="numero-grande"><strong>${r.aproveitamento}%</strong><span>aproveitamento</span></div>
+      <div class="numero-grande"><strong>${r.acertos}</strong><span>acertos</span></div>
+      <div class="numero-grande"><strong>${r.erros}</strong><span>erros</span></div>
+    </section>
+    <p class="mini centro">${quem} · ${r.questoes} questões respondidas</p>
+
+    ${dados.maisDificil ? `
+      <h3 class="titulo-secao">Tema com maior dificuldade</h3>
+      <div class="destaque-dificil">
+        <strong>${escapar(dados.maisDificil.nome)}</strong>
+        <p class="mini">${dados.maisDificil.fase ? `Fase ${dados.maisDificil.fase} · ` : ''}${dados.maisDificil.pctErro}% de erro
+        — ${dados.maisDificil.erradas} de ${dados.maisDificil.total} questões${turma && dados.maisDificil.alunos
+          ? `, em ${dados.maisDificil.alunos} aluno${dados.maisDificil.alunos === 1 ? '' : 's'}` : ''}.</p>
+      </div>` : ''}
+
+    ${dados.porAssunto.length ? `
+      <h3 class="titulo-secao">Erro por assunto</h3>
+      ${graficoDeDificuldade(dados.porAssunto)}` : `
+      <h3 class="titulo-secao">Erro por assunto</h3>
+      <p class="mini">Ainda não há questões suficientes por assunto para comparar. Cada assunto entra
+      na lista a partir de ${relatorio.MINIMO_PARA_RANQUEAR} questões respondidas — antes disso o
+      percentual diria mais sobre o acaso do que sobre a dificuldade.</p>`}
+
+    ${dados.poucoDado.length ? `
+      <h4 class="titulo-secao">Ainda com poucas respostas</h4>
+      <p class="mini">Aparecem aqui, sem posição, até chegarem a ${relatorio.MINIMO_PARA_RANQUEAR} questões.</p>
+      <ul class="lista-simples">
+        ${dados.poucoDado.map((a) => `<li>${escapar(a.nome)} — ${a.erradas} erro${a.erradas === 1 ? '' : 's'} em ${a.total}</li>`).join('')}
+      </ul>` : ''}
+
+    <h3 class="titulo-secao">Por fase</h3>
+    <div class="rolagem-tabela">
+      <table class="tabela">
+        <thead><tr><th>Fase</th><th>Provas</th><th>Acertos</th><th>Erros</th><th>Aprov.</th></tr></thead>
+        <tbody>
+          ${dados.porFase.map((f) => {
+            // "Fase 6 — Escalas maiores e armaduras" em duas linhas: o número
+            // nunca quebra, e o título vai miúdo embaixo.
+            const partes = String(f.titulo).split(' — ');
+            return `<tr>
+            <td><strong>${escapar(partes[0])}</strong>${partes[1] ? `<small>${escapar(partes.slice(1).join(' — '))}</small>` : ''}</td>
+            <td>${f.provas}</td>
+            <td>${f.acertos}</td>
+            <td>${f.total - f.acertos}</td>
+            <td>${f.pctAcerto}%</td>
+          </tr>`;
+          }).join('')}
+        </tbody>
+      </table>
+    </div>
+    <p class="mini">Ordenado da fase de menor aproveitamento para a de maior.</p>`;
+}
+
+/** O relatório do próprio aluno, somado do que está neste aparelho. */
+function telaRelatorio() {
+  const dados = relatorio.doAluno();
+  const semDetalhe = dados.resumo.questoes > 0 && !dados.comDetalhe;
+  return `${cabecalho('Meus acertos e erros', '#/')}
+    <section class="admin">
+      ${corpoDoRelatorio(dados)}
+      ${semDetalhe ? `<p class="mini">As provas feitas antes desta versão do app não guardaram o assunto
+      de cada questão, então elas contam no placar por fase mas não no gráfico. As próximas contam.</p>` : ''}
+    </section>`;
+}
+
+// Relatório da turma: vem do servidor, então tem os três estados de sempre.
+let relatorioDaTurma = null;
+
+function carregarRelatorioDaTurma() {
+  if (relatorioDaTurma && relatorioDaTurma.estado === 'carregando') return;
+  if (relatorioDaTurma && relatorioDaTurma.estado === 'pronto') return;
+  relatorioDaTurma = { estado: 'carregando' };
+  Promise.all([
+    nuvem.chamar('relatorio_assuntos', {}),
+    nuvem.chamar('relatorio_fases', {}),
+  ]).then(([assuntos, fases]) => {
+    relatorioDaTurma = { estado: 'pronto', dados: relatorio.daNuvem(assuntos, fases) };
+  }).catch((erro) => {
+    relatorioDaTurma = { estado: 'erro', erro: erro.message || 'Não deu para buscar o relatório.' };
+  }).then(() => {
+    // Só redesenha se a pessoa ainda estiver nesta tela.
+    if (window.location.hash.indexOf('#/painel/relatorio') === 0) desenhar();
+  });
+}
+
+function telaPainelRelatorio() {
+  const cabeca = cabecalho('Relatório da turma', '#/painel');
+
+  if (!sincronia.situacao().configurada) {
+    return `${cabeca}<section class="admin">
+      <p class="mini">Este app não está ligado a um banco, então cada aparelho só conhece o
+      próprio progresso. O relatório abaixo é o deste aparelho.</p>
+      ${corpoDoRelatorio(relatorio.doAluno())}
+    </section>`;
+  }
+  if (!sincronia.situacao().usuario) {
+    return `${cabeca}<section class="admin">
+      <p class="mini">Entre na sua conta para ver o desempenho da turma.</p>
+      <div class="acoes"><button class="botao" data-ir="#/nuvem">Guardar no servidor</button></div>
+    </section>`;
+  }
+
+  if (!relatorioDaTurma || relatorioDaTurma.estado === 'carregando') {
+    return `${cabeca}<section class="admin"><p class="aviso">Somando as provas da turma…</p></section>`;
+  }
+  if (relatorioDaTurma.estado === 'erro') {
+    return `${cabeca}<section class="admin">
+      <p class="mini alerta">${escapar(relatorioDaTurma.erro)}</p>
+      <div class="acoes"><button class="botao secundario" data-acao="adm:relatorio-recarregar">Tentar de novo</button></div>
+    </section>`;
+  }
+  return `${cabeca}<section class="admin">
+    ${corpoDoRelatorio(relatorioDaTurma.dados, { turma: true })}
+  </section>`;
+}
+
 // ------------------------------------------------------------------ nuvem
 
 function telaNuvem() {
@@ -7826,6 +8303,7 @@ function telaPainel() {
       <div class="acoes">
         <button class="botao secundario" data-ir="#/painel/sugestoes">💬 Sugestões${abertas ? ` (${abertas})` : ''}</button>
         <button class="botao secundario" data-ir="#/painel/equipe">👥 Contas de acesso</button>
+        <button class="botao secundario" data-ir="#/painel/relatorio">📊 Relatório da turma</button>
       </div>
       <h3>Usuário e senha</h3>
       ${editavel.senhaDeFabrica() ? '<p class="mini alerta">Você ainda está com o acesso de fábrica (admin / 123). Troque a senha antes de usar com a turma.</p>' : ''}
@@ -8349,8 +8827,12 @@ function telaResultadoCustom(metodoId, faseId) {
     prova.registrada = true;
     banco.registrarUsadas(chave, prova.questoes.map((q) => q.assinatura));
     banco.registrarTentativa(chave, {
+      id: novaTentativaId(),
       data: new Date().toISOString(), acertos: resultado.acertos, total: resultado.total,
       nota: resultado.nota, aprovado: resultado.aprovado,
+      // Questão de método cadastrado não nasce de gerador: o assunto passa a
+      // ser a própria fase, que é o recorte mais fino que existe ali.
+      itens: resultado.detalhes.map((d, i) => ({ indice: i, assunto: chave, certa: Boolean(d.certa) })),
     });
     if (resultado.aprovado) efeito('vitoria');
   }
@@ -9027,6 +9509,8 @@ function acaoPainel(acao, botao) {
   const questaoId = botao.dataset.q;
   const indice = botao.dataset.i !== undefined ? Number(botao.dataset.i) : null;
 
+  if (nome === 'relatorio-recarregar') { relatorioDaTurma = null; carregarRelatorioDaTurma(); desenhar(); return true; }
+
   // -------------------------------------------------------------- nuvem
   // Tudo aqui é conversa com a rede: o botão trava enquanto espera, e a
   // tela é redesenhada quando a resposta chega.
@@ -9630,6 +10114,7 @@ function desenhar() {
     else if (partes[1] === 'revisar') html = telaPainelRevisar(partes[2], partes[3]);
     else if (partes[1] === 'cursos') html = telaPainelCursos();
     else if (partes[1] === 'curso') html = telaPainelCurso(partes[2]);
+    else if (partes[1] === 'relatorio') { html = telaPainelRelatorio(); depois = carregarRelatorioDaTurma; }
     else if (partes[1] === 'auditoria') html = telaPainelAuditoria();
     else if (partes[1] === 'turmas') html = telaPainelTurmas();
     else if (partes[1] === 'turma') html = telaPainelTurma(partes[2]);
@@ -9647,6 +10132,7 @@ function desenhar() {
     else if (partes[2] === 'prova') html = telaProvaCustom(partes[1], partes[3]);
     else html = telaMetodo(partes[1]);
   }
+  else if (partes[0] === 'relatorio') html = telaRelatorio();
   else if (partes[0] === 'nuvem') html = telaNuvem();
   else if (partes[0] === 'sobre') html = telaSobre();
   else if (partes[0] === 'certificados') html = telaCertificados();

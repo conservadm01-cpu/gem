@@ -23,6 +23,7 @@ celular, e o encarregado enxerga a turma de onde estiver.
    | `migrations/0003_politicas.sql` | quem enxerga o quê (Row Level Security) |
    | `migrations/0004_conteudo.sql`  | conteúdo do painel indo e voltando |
    | `migrations/0005_trava_nula.sql`| papel nunca volta NULL (ver abaixo) |
+   | `migrations/0006_desempenho.sql`| acerto e erro de cada questão, por assunto |
 
    Quem usa a [CLI do Supabase](https://supabase.com/docs/guides/cli) roda
    `supabase db push` e pula este passo.
@@ -65,7 +66,7 @@ ele entra na hora, com confirmação ele avisa para clicar no link do e-mail.
 
 ```
 perfis ─┬─ progresso_fases ── (por fase: lições lidas, jogos, melhor nota)
-        ├─ tentativas          cada prova feita
+        ├─ tentativas ── tentativa_itens   acerto/erro de cada questão, por assunto
         ├─ questoes_usadas     para não repetir pergunta
         ├─ certificados        um por fase concluída
         └─ matriculas ── matricula_historico
