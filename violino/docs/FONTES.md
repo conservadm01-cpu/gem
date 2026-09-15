@@ -73,9 +73,15 @@ Chegaram 4 PDFs de 100 páginas (400 no total). A música é imagem digitalizada
 mas **o cabeçalho de cada hino tem camada de texto**, e a seção de instruções
 também. Daí saíram dois conjuntos de dados, ambos verificáveis:
 
-**`violino/dados/hinario-indice.csv`** — 364 hinos, números 1 a 364, sem
-falhas e sem repetição (364 hinos + 6 páginas de rosto + 30 em branco = as 400
-páginas, todas justificadas). Cada linha traz número, nome, arquivo e página.
+**`violino/dados/hinario-indice.csv`** — **385 hinos e 6 coros**. O hinário
+vai até o hino 480, seguido do índice geral e dos coros, numerados à parte.
+Cada linha traz número, nome, arquivo e página.
+
+Cobertura: hinos **1 a 364** e **460 a 480**; coros **1 a 6**. **Faltam os
+hinos 365 a 459** — 95 no total, que não vieram em nenhum arquivo. Os nomes
+dos arquivos não correspondem ao conteúdo (o chamado `301_a_400` termina no
+364; o chamado `501-535` começa no 460), então vale conferir pelo conteúdo, e
+não pelo nome, o que ainda falta exportar.
 
 **`violino/dados/hinario-regras.json`** — as 10 regras da seção *Instruções de
 utilização do hinário de música para instrumentos de cordas*, transcritas
@@ -102,9 +108,9 @@ páginas. Para um app de violino, o que interessa é a **edição de cordas**: �
 ela que traz os sinais de arcada por voz, citados na regra acima. As regras
 extraídas valem; a partitura, não.
 
-**2. A coleção termina no hino 364.** O arquivo se chama `301_a_400`, mas a
-última página é o hino 364. Se o hinário seguir além disso, esses hinos não
-vieram.
+**2. Faltam os hinos 365 a 459.** Os arquivos cobrem 1–364 e 460–480. O
+hinário termina no 480 (confirmado pelo índice geral e pelos coros que vêm
+depois), então o buraco é de 95 hinos no meio da coleção.
 
 **3. Tonalidade, compasso e andamento estão só na imagem.** A camada de texto
 dá número e nome. O resto — armadura, fórmula de compasso, marcação de
