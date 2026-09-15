@@ -70,8 +70,8 @@ create table if not exists public.fontes (
 insert into public.fontes (id, nome, edicao, observacao) values
   ('MSA','Método Simplificado de Aprendizagem Musical','1ª edição, dez/2022',
    'Congregação Cristã no Brasil. Currículo derivado com referência de página.'),
-  ('METODO_VIOLINO','Método de Violino (Schmoll CCB)','',
-   'VALIDAÇÃO NECESSÁRIA — arquivo ainda não recebido. 81 páginas, segundo o projeto.'),
+  ('METODO_VIOLINO','Método de Violino','Violino Schmoll CCB',
+   'PDF escaneado de 81 páginas; conferir elementos gráficos no original. VALIDAÇÃO NECESSÁRIA — o original ainda não foi recebido; só a camada textual auxiliar.'),
   ('HINARIO','Hinário CCB nº 5','Livro número 5',
    'Índice e regras extraídos. A partitura recebida é a edição de órgão; falta a de cordas.')
 on conflict (id) do nothing;
@@ -220,6 +220,7 @@ create table if not exists public.matriz (
   subassunto       text not null default '',
   habilidade       public.habilidade,
   pagina           text not null default '',
+  exercicio        text not null default '',
   dificuldade      smallint check (dificuldade between 1 and 5),
   tipo_atividade   public.tipo_atividade,
   tipo_questao     public.tipo_questao,
@@ -229,6 +230,7 @@ create table if not exists public.matriz (
   -- Marca o que é classificação do sistema e ainda não passou por revisão
   -- humana: habilidade e dificuldade não vêm das fontes.
   revisado         boolean not null default false,
+  conferir_no_original boolean not null default false,
   observacao       text not null default ''
 );
 create index if not exists matriz_fonte_idx on public.matriz (fonte_id, fase);
@@ -279,38 +281,36 @@ create table if not exists public.hinario_regras (
 
 -- ------------------------------------------------- método de violino
 
--- Taxonomia de indexação do método, conforme o projeto. É estrutura: o
--- conteúdo de cada tópico só entra quando o método chegar, e até lá cada
--- linha fica RASCUNHO com a observação de validação.
+-- Taxonomia de indexação do método, nas dez áreas do mapa pedagógico da
+-- camada auxiliar. É índice de navegação, não conteúdo: a formulação de cada
+-- lição só entra quando o método original chegar.
+--
+-- `[CONFERIR NO ORIGINAL]` é a marca pedida pela própria camada auxiliar,
+-- para o que depende de partitura, desenho ou símbolo — que OCR de texto não
+-- lê de forma confiável. Fica separada de VALIDAÇÃO NECESSÁRIA de propósito:
+-- uma diz "existe no original, confira lá"; a outra, "ainda não temos fonte".
 create table if not exists public.metodo_topicos (
   id         text primary key,
   ordem      integer not null default 0,
-  grupo      text not null,
+  area       text not null,
   titulo     text not null,
+  indicadores text not null default '',
   pagina     text not null default '',
+  exercicio  text not null default '',
+  conferir_no_original boolean not null default true,
   status     public.status_conteudo not null default 'RASCUNHO',
   observacao text not null default 'VALIDAÇÃO NECESSÁRIA — aguardando o método de violino'
 );
 
-insert into public.metodo_topicos (id, ordem, grupo, titulo) values
-  ('mv.instrumento.partes',      1,'Instrumento','Partes do violino'),
-  ('mv.instrumento.arco',        2,'Instrumento','Partes do arco'),
-  ('mv.instrumento.manutencao',  3,'Instrumento','Manutenção'),
-  ('mv.instrumento.cordas',      4,'Instrumento','Cordas'),
-  ('mv.instrumento.afinacao',    5,'Instrumento','Afinação'),
-  ('mv.postura.corpo',           6,'Postura','Posição do corpo'),
-  ('mv.postura.violino',         7,'Postura','Posição do violino'),
-  ('mv.esquerda.mao',            8,'Mão esquerda','Mão esquerda'),
-  ('mv.esquerda.dedos',          9,'Mão esquerda','Colocação dos dedos'),
-  ('mv.direita.mao',            10,'Mão direita','Mão direita'),
-  ('mv.direita.pegada',         11,'Mão direita','Pegada do arco'),
-  ('mv.direita.movimento',      12,'Mão direita','Movimento do arco'),
-  ('mv.pratica.cordas_soltas',  13,'Prática','Cordas soltas'),
-  ('mv.pratica.exercicios',     14,'Prática','Exercícios'),
-  ('mv.pratica.marcacao',       15,'Prática','Marcação'),
-  ('mv.leitura.leitura',        16,'Leitura','Leitura'),
-  ('mv.leitura.escalas',        17,'Leitura','Escalas'),
-  ('mv.leitura.posicoes',       18,'Leitura','Posições'),
-  ('mv.leitura.arcadas',        19,'Leitura','Arcadas'),
-  ('mv.pratica.progressivos',   20,'Prática','Exercícios progressivos')
+insert into public.metodo_topicos (id, ordem, area, titulo, indicadores) values
+  ('mv.instrumento',  1,'Instrumento','Conhecimento do instrumento','Partes do violino; conhecimento do instrumento; manutenção.'),
+  ('mv.arco',         2,'Arco','O arco','Partes do arco; pegada; movimentos; sinais e exercícios de arcada.'),
+  ('mv.postura',      3,'Postura','Postura e posicionamento','Posição do corpo e posicionamento do violino para execução.'),
+  ('mv.afinacao',     4,'Afinação','Afinação','Cordas soltas e procedimentos de afinação apresentados no método.'),
+  ('mv.mao_esquerda', 5,'Mão esquerda','Mão esquerda','Posicionamento, colocação dos dedos e exercícios progressivos.'),
+  ('mv.leitura',      6,'Leitura','Leitura aplicada ao violino','Exercícios associados à leitura musical aplicada ao violino.'),
+  ('mv.escalas',      7,'Escalas','Escalas','Exercícios de escalas e progressão técnica.'),
+  ('mv.posicoes',     8,'Posições','Posições','Conteúdo relacionado a posições, incluindo 3ª e 5ª posições.'),
+  ('mv.tecnicas',     9,'Técnicas','Técnicas de arco','Staccato, martelato e saltellato.'),
+  ('mv.harmonicos',  10,'Harmônicos','Harmônicos','Conteúdo específico sobre harmônicos.')
 on conflict (id) do nothing;

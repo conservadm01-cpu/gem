@@ -11,7 +11,7 @@ construído com fidelidade e o que está bloqueado.
 |---|---|---|
 | `msaapp.html` | **Completo** | Lido inteiro. Arquitetura, módulos, banco de questões, fases, jogos, certificados, armazenamento, não repetição e roteador estão mapeados abaixo. |
 | MSA (livro) | **Parcial — 9 páginas de 158** | Ver abaixo. |
-| Método de Violino (Schmoll CCB) | **Ausente** | Nada. Todo o currículo de violino está bloqueado. |
+| Método de Violino (Schmoll CCB) | **Só a camada auxiliar** | Mapa das dez áreas e as regras de extração. O original de 81 páginas não chegou. |
 | Hinário CCB nº 5 | **Parcial — ver abaixo** | Índice de 364 hinos e as 10 regras de utilização, extraídos com fidelidade. Falta a partitura de cordas. |
 
 ## O MSA entregue está truncado
@@ -132,7 +132,26 @@ campos ficam `VALIDAÇÃO NECESSÁRIA` no índice.
 
 ## Método de Violino
 
-Sem o arquivo, nada de conteúdo será escrito nesse módulo. O que será
+Chegou o **PDF Inteligente para IA** — uma camada textual auxiliar sobre o
+método, não o método. O documento diz isso de si mesmo: *"Envie este PDF junto
+com o PDF original"* e *"não é uma alegação de OCR completo das 81 páginas"*.
+O original (`Violino Schmoll CCB`, 81 páginas, escaneado) continua ausente.
+
+O que dele foi aproveitado:
+
+- **O mapa de dez áreas** virou a taxonomia de `metodo_topicos`: Instrumento,
+  Arco, Postura, Afinação, Mão esquerda, Leitura, Escalas, Posições, Técnicas
+  (staccato, martelato, saltellato) e Harmônicos — com os indicadores de cada
+  uma. Três dessas áreas não estavam na lista original do projeto.
+- **O campo `exercicio`** na matriz e nos tópicos.
+- **A marca `[CONFERIR NO ORIGINAL]`**, que o documento pede para o que
+  depende de partitura, desenho ou símbolo. Ela é diferente de VALIDAÇÃO
+  NECESSÁRIA, e as duas coexistem no banco: uma diz "existe no original,
+  confira lá"; a outra, "ainda não temos fonte".
+
+O que continua bloqueado: a formulação de cada lição, os números de exercício,
+as páginas, dedilhados, arcadas e posições. Nada disso será escrito sem o
+original — que é exatamente o que as regras de extração do documento mandam. O que será
 construído é a **estrutura**: as tabelas, a taxonomia de indexação pedida no
 prompt (partes do violino, arco, postura, mão esquerda, arcadas, cordas
 soltas, escalas, posições…; e número, tonalidade, compasso, arcadas,
