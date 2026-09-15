@@ -1,0 +1,70 @@
+{
+ "fonte": "Hinário CCB nº 5 — Instruções de utilização do hinário de música para instrumentos de cordas",
+ "localizacao": "páginas 6 e 7 do PDF \"Hinario-CCB-5-orgao_1_a_100.pdf\"",
+ "observacao": "Transcrito literalmente da camada de texto do PDF. Nada foi parafraseado nem acrescentado.",
+ "regras": [
+  {
+   "id": "HIN-R01",
+   "assunto": "Introdução dos hinos",
+   "pdf_pagina": 6,
+   "texto": "A introdução dos hinos deve ser dada até o sinal."
+  },
+  {
+   "id": "HIN-R02",
+   "assunto": "Velocidade",
+   "pdf_pagina": 6,
+   "texto": "Foram colocadas marcações de metrônomo das velocidades mínimas e máximas em todos os hinos (por exemplo: = 60 - 80), que designam os limites dentro dos quais cada hino deve ser entoado, sendo recomendável que o andamento fique na média entre as velocidades mínima e máxima indicadas."
+  },
+  {
+   "id": "HIN-R03",
+   "assunto": "Interpretação",
+   "pdf_pagina": 6,
+   "texto": "A interpretação do hino, no que diz respeito à intensidade do som, andamento e caráter, independentemente da fórmula de compasso, deve ser adequada à inspiração da poesia. Portanto, recomenda-se ao músico tocar o seu instrumento sempre considerando a poesia de cada hino."
+  },
+  {
+   "id": "HIN-R04",
+   "assunto": "Indicação de interpretação",
+   "pdf_pagina": 6,
+   "texto": "Determinados hinos trazem indicação de interpretação logo após a velocidade do metrônomo, a qual tem como finalidade chamar a atenção do músico para uma forma de interpretação mais específica."
+  },
+  {
+   "id": "HIN-R05",
+   "assunto": "Hinos com \"Final\" após as estrofes",
+   "pdf_pagina": 6,
+   "texto": "Alguns hinos deste hinário (por exemplo, o hino 41) serão executados tocando-se primeiramente todas as estrofes, uma após a outra, e, apenas ao término da última estrofe, tocar-se-á uma só vez a seção denominada \"Final\" para encerrar o hino."
+  },
+  {
+   "id": "HIN-R06",
+   "assunto": "Como reconhecer o \"Final\"",
+   "pdf_pagina": 7,
+   "texto": "Esses hinos serão reconhecidos pelo sinal de ritornello já no início da estrofe e pelas casas de ritornello no fim da estrofe, bem como pela indicação de \"Final\"."
+  },
+  {
+   "id": "HIN-R07",
+   "assunto": "Distribuição das vozes",
+   "pdf_pagina": 7,
+   "violino": true,
+   "texto": "Os violinos devem executar a voz do soprano, as violas a voz do tenor e os violoncelos a voz do baixo. Quando houver necessidade e a critério do encarregado de orquestra, alguns violinos poderão ser solicitados a executar a voz do contralto."
+  },
+  {
+   "id": "HIN-R08",
+   "assunto": "Clave do tenor",
+   "pdf_pagina": 7,
+   "texto": "Neste hinário foi introduzida a escrita do tenor na clave de dó na 3a. linha, específica para as violas. O músico deve ter atenção aos sinais de arcada específicos da voz do seu instrumento."
+  },
+  {
+   "id": "HIN-R09",
+   "assunto": "Oitava",
+   "pdf_pagina": 7,
+   "violino": true,
+   "texto": "Adota-se como padrão nos cultos em geral que os violinos toquem uma oitava acima - salvo se, excepcionalmente, o encarregado de orquestra solicitar que se toque como está escrito. As violas e os violoncelos devem sempre tocar como está escrito."
+  },
+  {
+   "id": "HIN-R10",
+   "assunto": "Sinais de arcada",
+   "pdf_pagina": 7,
+   "violino": true,
+   "texto": "Neste hinário foram introduzidos sinais de arcada para as quatro vozes. Quando houver arcada somente sobre a nota do soprano, essa arcada também se aplica ao contralto. Da mesma forma, quando houver arcada somente sobre a nota do tenor, essa arcada também se aplica ao baixo."
+  }
+ ]
+}
