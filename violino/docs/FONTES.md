@@ -100,13 +100,24 @@ literalmente. Três são específicas de violino:
 
 ### Três ressalvas
 
-**1. É a edição de órgão — VALIDAÇÃO NECESSÁRIA.** Os arquivos se chamam
-`orgao` e a partitura confere: três pautas com colchete, no formato de órgão.
-Mas a seção de instruções é a de **cordas**, e fala da "escrita do tenor na
-clave de dó na 3ª linha, específica para as violas" — que não aparece nessas
-páginas. Para um app de violino, o que interessa é a **edição de cordas**: é
-ela que traz os sinais de arcada por voz, citados na regra acima. As regras
-extraídas valem; a partitura, não.
+**1. É a edição de órgão — decisão tomada: seguir com ela.** Os arquivos se
+chamam `orgao` e a partitura confere: três pautas com colchete, no formato de
+órgão. A seção de instruções, porém, é a de **cordas**, e fala da "escrita do
+tenor na clave de dó na 3ª linha, específica para as violas", que não aparece
+nessas páginas.
+
+O responsável pelo projeto decidiu seguir com esta edição. O que isso implica,
+para ficar registrado:
+
+- **Vale:** as 10 regras de utilização; o índice; e os metadados de cada hino
+  — armadura, fórmula de compasso, faixa de metrônomo e compositor. Esses
+  quatro são do hino, não da edição: a armadura e o compasso de um hino são os
+  mesmos em qualquer arranjo, e a faixa de metrônomo é a que o hinário
+  estabelece para todos os instrumentos.
+- **Não vale:** os **sinais de arcada por hino**. Eles só existem na edição de
+  cordas — é o que a regra HIN-R10 descreve. O campo `arcadas` fica vazio, e
+  continuará vazio enquanto essa edição não chegar. O app não deve inventar
+  arcada nenhuma.
 
 **2. Faltam os hinos 365 a 459.** Os arquivos cobrem 1–364 e 460–480. O
 hinário termina no 480 (confirmado pelo índice geral e pelos coros que vêm

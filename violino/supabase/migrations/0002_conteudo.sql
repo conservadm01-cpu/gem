@@ -243,6 +243,12 @@ create table if not exists public.hinos (
   numero          integer not null,
   tipo            public.tipo_hino not null default 'HINO',
   nome            text not null,
+  compositor      text not null default '',
+  edicao          text not null default '',
+  -- `armadura` é o que está impresso na partitura (quantos sustenidos ou
+  -- bemóis). A tonalidade em si o hinário não escreve, então continua campo
+  -- à parte, preenchido só depois de validada.
+  armadura        text not null default '',
   tonalidade      text not null default '',
   compasso        text not null default '',
   andamento_min   integer,

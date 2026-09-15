@@ -6,14 +6,21 @@
   "arquivo": "Hinario-CCB-5-orgao_1_a_100.pdf",
   "pdf_pagina": 9,
   "tonalidade": "VALIDAÇÃO NECESSÁRIA",
-  "compasso": "VALIDAÇÃO NECESSÁRIA",
-  "andamento": "VALIDAÇÃO NECESSÁRIA",
+  "compasso": "4/4",
+  "andamento": "seminima = 56-66",
   "voz_violino": "soprano",
   "oitava_violino": "uma oitava acima",
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "3 bemóis",
+  "compositor": "Leila Naylor Morris",
+  "edicao": "órgão",
+  "andamento_figura": "seminima",
+  "andamento_min": 56,
+  "andamento_max": 66,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 2,
@@ -22,14 +29,21 @@
   "arquivo": "Hinario-CCB-5-orgao_1_a_100.pdf",
   "pdf_pagina": 10,
   "tonalidade": "VALIDAÇÃO NECESSÁRIA",
-  "compasso": "VALIDAÇÃO NECESSÁRIA",
-  "andamento": "VALIDAÇÃO NECESSÁRIA",
+  "compasso": "4/4",
+  "andamento": "seminima = 60-80",
   "voz_violino": "soprano",
   "oitava_violino": "uma oitava acima",
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "3 bemóis",
+  "compositor": "Samuel Sebastian Wesley",
+  "edicao": "órgão",
+  "andamento_figura": "seminima",
+  "andamento_min": 60,
+  "andamento_max": 80,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 3,
@@ -38,14 +52,21 @@
   "arquivo": "Hinario-CCB-5-orgao_1_a_100.pdf",
   "pdf_pagina": 11,
   "tonalidade": "VALIDAÇÃO NECESSÁRIA",
-  "compasso": "VALIDAÇÃO NECESSÁRIA",
-  "andamento": "VALIDAÇÃO NECESSÁRIA",
+  "compasso": "4/4",
+  "andamento": "seminima = 60-76",
   "voz_violino": "soprano",
   "oitava_violino": "uma oitava acima",
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "2 sustenidos",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "seminima",
+  "andamento_min": 60,
+  "andamento_max": 76,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 4,
@@ -54,14 +75,21 @@
   "arquivo": "Hinario-CCB-5-orgao_1_a_100.pdf",
   "pdf_pagina": 12,
   "tonalidade": "VALIDAÇÃO NECESSÁRIA",
-  "compasso": "VALIDAÇÃO NECESSÁRIA",
-  "andamento": "VALIDAÇÃO NECESSÁRIA",
+  "compasso": "6/4",
+  "andamento": "seminima = 112-138",
   "voz_violino": "soprano",
   "oitava_violino": "uma oitava acima",
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "4 bemóis",
+  "compositor": "Bentley DeForest Ackley",
+  "edicao": "órgão",
+  "andamento_figura": "seminima",
+  "andamento_min": 112,
+  "andamento_max": 138,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 5,
@@ -70,14 +98,21 @@
   "arquivo": "Hinario-CCB-5-orgao_1_a_100.pdf",
   "pdf_pagina": 13,
   "tonalidade": "VALIDAÇÃO NECESSÁRIA",
-  "compasso": "VALIDAÇÃO NECESSÁRIA",
-  "andamento": "VALIDAÇÃO NECESSÁRIA",
+  "compasso": "6/8",
+  "andamento": "colcheia = 112-144",
   "voz_violino": "soprano",
   "oitava_violino": "uma oitava acima",
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "3 bemóis",
+  "compositor": "Leila Naylor Morris",
+  "edicao": "órgão",
+  "andamento_figura": "colcheia",
+  "andamento_min": 112,
+  "andamento_max": 144,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 6,
@@ -93,7 +128,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 7,
@@ -102,14 +144,21 @@
   "arquivo": "Hinario-CCB-5-orgao_1_a_100.pdf",
   "pdf_pagina": 15,
   "tonalidade": "VALIDAÇÃO NECESSÁRIA",
-  "compasso": "VALIDAÇÃO NECESSÁRIA",
-  "andamento": "VALIDAÇÃO NECESSÁRIA",
+  "compasso": "6/4",
+  "andamento": "seminima = 80-100",
   "voz_violino": "soprano",
   "oitava_violino": "uma oitava acima",
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "3 bemóis",
+  "compositor": "João Dieners",
+  "edicao": "órgão",
+  "andamento_figura": "seminima",
+  "andamento_min": 80,
+  "andamento_max": 100,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 8,
@@ -118,14 +167,21 @@
   "arquivo": "Hinario-CCB-5-orgao_1_a_100.pdf",
   "pdf_pagina": 16,
   "tonalidade": "VALIDAÇÃO NECESSÁRIA",
-  "compasso": "VALIDAÇÃO NECESSÁRIA",
-  "andamento": "VALIDAÇÃO NECESSÁRIA",
+  "compasso": "6/8",
+  "andamento": "colcheia = 112-138",
   "voz_violino": "soprano",
   "oitava_violino": "uma oitava acima",
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "3 bemóis",
+  "compositor": "Peter Philip Bilhorn",
+  "edicao": "órgão",
+  "andamento_figura": "colcheia",
+  "andamento_min": 112,
+  "andamento_max": 138,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 9,
@@ -141,7 +197,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 10,
@@ -157,7 +220,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 11,
@@ -173,7 +243,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 12,
@@ -189,7 +266,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 13,
@@ -205,7 +289,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 14,
@@ -221,7 +312,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 15,
@@ -237,7 +335,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 16,
@@ -253,7 +358,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 17,
@@ -269,7 +381,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 18,
@@ -285,7 +404,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 19,
@@ -301,7 +427,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 20,
@@ -317,7 +450,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 21,
@@ -333,7 +473,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 22,
@@ -349,7 +496,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 23,
@@ -365,7 +519,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 24,
@@ -381,7 +542,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 25,
@@ -397,7 +565,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 26,
@@ -413,7 +588,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 27,
@@ -429,7 +611,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 28,
@@ -445,7 +634,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 29,
@@ -461,7 +657,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 30,
@@ -477,7 +680,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 31,
@@ -493,7 +703,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 32,
@@ -509,7 +726,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 33,
@@ -525,7 +749,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 34,
@@ -541,7 +772,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 35,
@@ -557,7 +795,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 36,
@@ -573,7 +818,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 37,
@@ -589,7 +841,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 38,
@@ -605,7 +864,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 39,
@@ -621,7 +887,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 40,
@@ -637,7 +910,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 41,
@@ -653,7 +933,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 42,
@@ -669,7 +956,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 43,
@@ -685,7 +979,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 44,
@@ -701,7 +1002,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 45,
@@ -717,7 +1025,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 46,
@@ -733,7 +1048,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 47,
@@ -749,7 +1071,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 48,
@@ -765,7 +1094,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 49,
@@ -781,7 +1117,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 50,
@@ -797,7 +1140,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 51,
@@ -813,7 +1163,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 52,
@@ -829,7 +1186,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 53,
@@ -845,7 +1209,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 54,
@@ -861,7 +1232,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 55,
@@ -877,7 +1255,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 56,
@@ -893,7 +1278,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 57,
@@ -909,7 +1301,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 58,
@@ -925,7 +1324,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 59,
@@ -941,7 +1347,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 60,
@@ -957,7 +1370,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 61,
@@ -973,7 +1393,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 62,
@@ -989,7 +1416,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 63,
@@ -1005,7 +1439,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 64,
@@ -1021,7 +1462,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 65,
@@ -1037,7 +1485,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 66,
@@ -1053,7 +1508,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 67,
@@ -1069,7 +1531,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 68,
@@ -1085,7 +1554,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 69,
@@ -1101,7 +1577,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 70,
@@ -1117,7 +1600,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 71,
@@ -1133,7 +1623,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 72,
@@ -1149,7 +1646,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 73,
@@ -1165,7 +1669,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 74,
@@ -1181,7 +1692,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 75,
@@ -1197,7 +1715,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 76,
@@ -1213,7 +1738,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 77,
@@ -1229,7 +1761,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 78,
@@ -1245,7 +1784,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 79,
@@ -1261,7 +1807,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 80,
@@ -1277,7 +1830,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 81,
@@ -1293,7 +1853,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 82,
@@ -1309,7 +1876,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 83,
@@ -1325,7 +1899,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 84,
@@ -1341,7 +1922,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 85,
@@ -1357,7 +1945,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 86,
@@ -1373,7 +1968,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 87,
@@ -1389,7 +1991,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 88,
@@ -1405,7 +2014,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 89,
@@ -1421,7 +2037,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 90,
@@ -1437,7 +2060,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 91,
@@ -1453,7 +2083,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 92,
@@ -1469,7 +2106,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 93,
@@ -1485,7 +2129,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 94,
@@ -1501,7 +2152,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 95,
@@ -1517,7 +2175,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 96,
@@ -1533,7 +2198,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 97,
@@ -1549,7 +2221,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 98,
@@ -1565,7 +2244,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 99,
@@ -1581,7 +2267,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 100,
@@ -1597,7 +2290,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 101,
@@ -1613,7 +2313,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 102,
@@ -1629,7 +2336,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 103,
@@ -1645,7 +2359,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 104,
@@ -1661,7 +2382,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 105,
@@ -1677,7 +2405,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 106,
@@ -1693,7 +2428,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 107,
@@ -1709,7 +2451,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 108,
@@ -1725,7 +2474,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 109,
@@ -1741,7 +2497,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 110,
@@ -1757,7 +2520,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 111,
@@ -1773,7 +2543,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 112,
@@ -1789,7 +2566,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 113,
@@ -1805,7 +2589,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 114,
@@ -1821,7 +2612,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 115,
@@ -1837,7 +2635,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 116,
@@ -1853,7 +2658,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 117,
@@ -1869,7 +2681,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 118,
@@ -1885,7 +2704,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 119,
@@ -1901,7 +2727,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 120,
@@ -1917,7 +2750,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 121,
@@ -1933,7 +2773,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 122,
@@ -1949,7 +2796,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 123,
@@ -1965,7 +2819,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 124,
@@ -1981,7 +2842,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 125,
@@ -1997,7 +2865,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 126,
@@ -2013,7 +2888,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 127,
@@ -2029,7 +2911,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 128,
@@ -2045,7 +2934,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 129,
@@ -2061,7 +2957,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 130,
@@ -2077,7 +2980,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 131,
@@ -2093,7 +3003,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 132,
@@ -2109,7 +3026,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 133,
@@ -2125,7 +3049,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 134,
@@ -2141,7 +3072,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 135,
@@ -2157,7 +3095,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 136,
@@ -2173,7 +3118,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 137,
@@ -2189,7 +3141,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 138,
@@ -2205,7 +3164,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 139,
@@ -2221,7 +3187,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 140,
@@ -2237,7 +3210,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 141,
@@ -2253,7 +3233,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 142,
@@ -2269,7 +3256,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 143,
@@ -2285,7 +3279,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 144,
@@ -2301,7 +3302,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 145,
@@ -2317,7 +3325,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 146,
@@ -2333,7 +3348,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 147,
@@ -2349,7 +3371,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 148,
@@ -2365,7 +3394,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 149,
@@ -2381,7 +3417,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 150,
@@ -2397,7 +3440,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 151,
@@ -2413,7 +3463,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 152,
@@ -2429,7 +3486,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 153,
@@ -2445,7 +3509,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 154,
@@ -2461,7 +3532,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 155,
@@ -2477,7 +3555,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 156,
@@ -2493,7 +3578,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 157,
@@ -2509,7 +3601,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 158,
@@ -2525,7 +3624,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 159,
@@ -2541,7 +3647,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 160,
@@ -2557,7 +3670,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 161,
@@ -2573,7 +3693,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 162,
@@ -2589,7 +3716,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 163,
@@ -2605,7 +3739,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 164,
@@ -2621,7 +3762,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 165,
@@ -2637,7 +3785,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 166,
@@ -2653,7 +3808,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 167,
@@ -2669,7 +3831,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 168,
@@ -2685,7 +3854,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 169,
@@ -2701,7 +3877,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 170,
@@ -2717,7 +3900,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 171,
@@ -2733,7 +3923,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 172,
@@ -2749,7 +3946,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 173,
@@ -2765,7 +3969,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 174,
@@ -2781,7 +3992,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 175,
@@ -2797,7 +4015,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 176,
@@ -2813,7 +4038,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 177,
@@ -2829,7 +4061,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 178,
@@ -2845,7 +4084,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 179,
@@ -2861,7 +4107,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 180,
@@ -2877,7 +4130,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 181,
@@ -2893,7 +4153,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 182,
@@ -2909,7 +4176,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 183,
@@ -2925,7 +4199,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 184,
@@ -2941,7 +4222,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 185,
@@ -2957,7 +4245,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 186,
@@ -2973,7 +4268,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 187,
@@ -2989,7 +4291,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 188,
@@ -3005,7 +4314,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 189,
@@ -3021,7 +4337,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 190,
@@ -3037,7 +4360,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 191,
@@ -3053,7 +4383,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 192,
@@ -3069,7 +4406,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 193,
@@ -3085,7 +4429,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 194,
@@ -3101,7 +4452,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 195,
@@ -3117,7 +4475,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 196,
@@ -3133,7 +4498,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 197,
@@ -3149,7 +4521,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 198,
@@ -3165,7 +4544,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 199,
@@ -3181,7 +4567,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 200,
@@ -3197,7 +4590,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 201,
@@ -3213,7 +4613,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 202,
@@ -3229,7 +4636,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 203,
@@ -3245,7 +4659,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 204,
@@ -3261,7 +4682,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 205,
@@ -3277,7 +4705,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 206,
@@ -3293,7 +4728,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 207,
@@ -3309,7 +4751,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 208,
@@ -3325,7 +4774,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 209,
@@ -3341,7 +4797,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 210,
@@ -3357,7 +4820,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 211,
@@ -3373,7 +4843,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 212,
@@ -3389,7 +4866,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 213,
@@ -3405,7 +4889,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 214,
@@ -3421,7 +4912,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 215,
@@ -3437,7 +4935,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 216,
@@ -3453,7 +4958,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 217,
@@ -3469,7 +4981,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 218,
@@ -3485,7 +5004,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 219,
@@ -3501,7 +5027,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 220,
@@ -3517,7 +5050,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 221,
@@ -3533,7 +5073,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 222,
@@ -3549,7 +5096,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 223,
@@ -3565,7 +5119,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 224,
@@ -3581,7 +5142,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 225,
@@ -3597,7 +5165,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 226,
@@ -3613,7 +5188,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 227,
@@ -3629,7 +5211,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 228,
@@ -3645,7 +5234,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 229,
@@ -3661,7 +5257,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 230,
@@ -3677,7 +5280,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 231,
@@ -3693,7 +5303,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 232,
@@ -3709,7 +5326,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 233,
@@ -3725,7 +5349,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 234,
@@ -3741,7 +5372,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 235,
@@ -3757,7 +5395,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 236,
@@ -3773,7 +5418,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 237,
@@ -3789,7 +5441,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 238,
@@ -3805,7 +5464,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 239,
@@ -3821,7 +5487,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 240,
@@ -3837,7 +5510,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 241,
@@ -3853,7 +5533,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 242,
@@ -3869,7 +5556,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 243,
@@ -3885,7 +5579,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 244,
@@ -3901,7 +5602,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 245,
@@ -3917,7 +5625,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 246,
@@ -3933,7 +5648,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 247,
@@ -3949,7 +5671,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 248,
@@ -3965,7 +5694,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 249,
@@ -3981,7 +5717,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 250,
@@ -3997,7 +5740,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 251,
@@ -4013,7 +5763,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 252,
@@ -4029,7 +5786,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 253,
@@ -4045,7 +5809,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 254,
@@ -4061,7 +5832,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 255,
@@ -4077,7 +5855,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 256,
@@ -4093,7 +5878,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 257,
@@ -4109,7 +5901,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 258,
@@ -4125,7 +5924,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 259,
@@ -4141,7 +5947,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 260,
@@ -4157,7 +5970,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 261,
@@ -4173,7 +5993,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 262,
@@ -4189,7 +6016,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 263,
@@ -4205,7 +6039,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 264,
@@ -4221,7 +6062,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 265,
@@ -4237,7 +6085,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 266,
@@ -4253,7 +6108,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 267,
@@ -4269,7 +6131,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 268,
@@ -4285,7 +6154,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 269,
@@ -4301,7 +6177,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 270,
@@ -4317,7 +6200,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 271,
@@ -4333,7 +6223,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 272,
@@ -4349,7 +6246,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 273,
@@ -4365,7 +6269,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 274,
@@ -4381,7 +6292,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 275,
@@ -4397,7 +6315,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 276,
@@ -4413,7 +6338,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 277,
@@ -4429,7 +6361,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 278,
@@ -4445,7 +6384,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 279,
@@ -4461,7 +6407,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 280,
@@ -4477,7 +6430,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 281,
@@ -4493,7 +6453,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 282,
@@ -4509,7 +6476,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 283,
@@ -4525,7 +6499,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 284,
@@ -4541,7 +6522,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 285,
@@ -4557,7 +6545,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 286,
@@ -4573,7 +6568,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 287,
@@ -4589,7 +6591,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 288,
@@ -4605,7 +6614,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 289,
@@ -4621,7 +6637,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 290,
@@ -4637,7 +6660,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 291,
@@ -4653,7 +6683,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 292,
@@ -4669,7 +6706,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 293,
@@ -4685,7 +6729,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 294,
@@ -4701,7 +6752,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 295,
@@ -4717,7 +6775,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 296,
@@ -4733,7 +6798,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 297,
@@ -4749,7 +6821,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 298,
@@ -4765,7 +6844,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 299,
@@ -4781,7 +6867,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 300,
@@ -4797,7 +6890,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 301,
@@ -4813,7 +6913,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 302,
@@ -4829,7 +6936,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 303,
@@ -4845,7 +6959,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 304,
@@ -4861,7 +6982,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 305,
@@ -4877,7 +7005,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 306,
@@ -4893,7 +7028,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 307,
@@ -4909,7 +7051,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 308,
@@ -4925,7 +7074,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 309,
@@ -4941,7 +7097,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 310,
@@ -4957,7 +7120,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 311,
@@ -4973,7 +7143,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 312,
@@ -4989,7 +7166,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 313,
@@ -5005,7 +7189,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 314,
@@ -5021,7 +7212,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 315,
@@ -5037,7 +7235,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 316,
@@ -5053,7 +7258,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 317,
@@ -5069,7 +7281,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 318,
@@ -5085,7 +7304,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 319,
@@ -5101,7 +7327,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 320,
@@ -5117,7 +7350,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 321,
@@ -5133,7 +7373,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 322,
@@ -5149,7 +7396,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 323,
@@ -5165,7 +7419,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 324,
@@ -5181,7 +7442,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 325,
@@ -5197,7 +7465,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 326,
@@ -5213,7 +7488,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 327,
@@ -5229,7 +7511,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 328,
@@ -5245,7 +7534,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 329,
@@ -5261,7 +7557,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 330,
@@ -5277,7 +7580,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 331,
@@ -5293,7 +7603,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 332,
@@ -5309,7 +7626,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 333,
@@ -5325,7 +7649,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 334,
@@ -5341,7 +7672,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 335,
@@ -5357,7 +7695,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 336,
@@ -5373,7 +7718,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 337,
@@ -5389,7 +7741,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 338,
@@ -5405,7 +7764,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 339,
@@ -5421,7 +7787,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 340,
@@ -5437,7 +7810,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 341,
@@ -5453,7 +7833,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 342,
@@ -5469,7 +7856,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 343,
@@ -5485,7 +7879,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 344,
@@ -5501,7 +7902,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 345,
@@ -5517,7 +7925,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 346,
@@ -5533,7 +7948,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 347,
@@ -5549,7 +7971,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 348,
@@ -5565,7 +7994,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 349,
@@ -5581,7 +8017,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 350,
@@ -5597,7 +8040,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 351,
@@ -5613,7 +8063,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 352,
@@ -5629,7 +8086,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 353,
@@ -5645,7 +8109,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 354,
@@ -5661,7 +8132,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 355,
@@ -5677,7 +8155,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 356,
@@ -5693,7 +8178,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 357,
@@ -5709,7 +8201,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 358,
@@ -5725,7 +8224,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 359,
@@ -5741,7 +8247,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 360,
@@ -5757,7 +8270,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 361,
@@ -5773,7 +8293,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 362,
@@ -5789,7 +8316,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 363,
@@ -5805,7 +8339,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 364,
@@ -5821,7 +8362,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 460,
@@ -5837,7 +8385,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 461,
@@ -5853,7 +8408,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 462,
@@ -5869,7 +8431,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 463,
@@ -5885,7 +8454,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 464,
@@ -5901,7 +8477,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 465,
@@ -5917,7 +8500,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 466,
@@ -5933,7 +8523,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 467,
@@ -5949,7 +8546,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 468,
@@ -5965,7 +8569,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 469,
@@ -5981,7 +8592,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 470,
@@ -5997,7 +8615,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 471,
@@ -6013,7 +8638,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 472,
@@ -6029,7 +8661,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 473,
@@ -6045,7 +8684,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 474,
@@ -6061,7 +8707,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 475,
@@ -6077,7 +8730,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 476,
@@ -6093,7 +8753,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 477,
@@ -6109,7 +8776,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 478,
@@ -6125,7 +8799,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 479,
@@ -6141,7 +8822,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 480,
@@ -6157,7 +8845,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": ""
+  "observacoes": "",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "HINO"
  },
  {
   "numero": 1,
@@ -6173,7 +8868,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": "CORO"
+  "observacoes": "CORO",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "CORO"
  },
  {
   "numero": 2,
@@ -6189,7 +8891,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": "CORO"
+  "observacoes": "CORO",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "CORO"
  },
  {
   "numero": 3,
@@ -6205,7 +8914,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": "CORO"
+  "observacoes": "CORO",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "CORO"
  },
  {
   "numero": 4,
@@ -6221,7 +8937,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": "CORO"
+  "observacoes": "CORO",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "CORO"
  },
  {
   "numero": 5,
@@ -6237,7 +8960,14 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": "CORO"
+  "observacoes": "CORO",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "CORO"
  },
  {
   "numero": 6,
@@ -6253,6 +8983,13 @@
   "arcadas": "VALIDAÇÃO NECESSÁRIA",
   "ritornello": "VALIDAÇÃO NECESSÁRIA",
   "final": "VALIDAÇÃO NECESSÁRIA",
-  "observacoes": "CORO"
+  "observacoes": "CORO",
+  "armadura": "VALIDAÇÃO NECESSÁRIA",
+  "compositor": "",
+  "edicao": "órgão",
+  "andamento_figura": "",
+  "andamento_min": null,
+  "andamento_max": null,
+  "tipo_registro": "CORO"
  }
 ]
