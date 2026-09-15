@@ -1,0 +1,129 @@
+ID,instrumento,fonte,fase,modulo,licao,assunto,subassunto,habilidade,pagina,dificuldade,tipo_de_atividade,tipo_de_questao,pre_requisito,objetivo,tags
+VIO-MSA-F01-L01,violino,MSA,1,MSA-F01,"Som, ruído e música",O som e a música,"Propriedades do som, notas musicais",COMPREENSÃO,9,1,LICAO,,,"Estudar som, ruído e música (MSA, pág. 9)",msa;fase1;som
+VIO-MSA-F01-L02,violino,MSA,1,MSA-F01,As quatro propriedades do som,O som e a música,"Propriedades do som, notas musicais",COMPREENSÃO,10,1,LICAO,,,"Estudar as quatro propriedades do som (MSA, pág. 10)",msa;fase1;som
+VIO-MSA-F01-L03,violino,MSA,1,MSA-F01,As sete notas musicais,O som e a música,"Propriedades do som, notas musicais",COMPREENSÃO,11,1,LICAO,,,"Estudar as sete notas musicais (MSA, pág. 11)",msa;fase1;som
+VIO-MSA-F01-JOUV,violino,MSA,1,MSA-F01,,O som e a música,Grave ou agudo?,APLICAÇÃO,,1,JOGO,ouvido,,Grave ou agudo?,msa;jogo;ouvido
+VIO-MSA-F01-JMEM,violino,MSA,1,MSA-F01,,O som e a música,Jogo da memória: propriedades do som,APLICAÇÃO,,1,JOGO,memoria,,Jogo da memória: propriedades do som,msa;jogo;memoria
+VIO-MSA-F02-L01,violino,MSA,2,MSA-F02,Pauta e pentagrama,A escrita musical,"Pentagrama, claves, figuras e pausas",COMPREENSÃO,12,1,LICAO,,MSA-F01,"Estudar pauta e pentagrama (MSA, pág. 12)",msa;fase2;escrita
+VIO-MSA-F02-L02,violino,MSA,2,MSA-F02,As claves,A escrita musical,"Pentagrama, claves, figuras e pausas",COMPREENSÃO,13,1,LICAO,,MSA-F01,"Estudar as claves (MSA, pág. 13)",msa;fase2;escrita
+VIO-MSA-F02-L03,violino,MSA,2,MSA-F02,Figuras de nota,A escrita musical,"Pentagrama, claves, figuras e pausas",COMPREENSÃO,15,1,LICAO,,MSA-F01,"Estudar figuras de nota (MSA, pág. 15)",msa;fase2;escrita
+VIO-MSA-F02-L04,violino,MSA,2,MSA-F02,Partes da nota e pausas,A escrita musical,"Pentagrama, claves, figuras e pausas",COMPREENSÃO,17,1,LICAO,,MSA-F01,"Estudar partes da nota e pausas (MSA, pág. 17)",msa;fase2;escrita
+VIO-MSA-F02-JMEM,violino,MSA,2,MSA-F02,,A escrita musical,Memória das figuras,APLICAÇÃO,,1,JOGO,memoria,,Memória das figuras,msa;jogo;memoria
+VIO-MSA-F02-JPEN,violino,MSA,2,MSA-F02,,A escrita musical,Leitura relâmpago,APLICAÇÃO,,1,JOGO,pentagrama,,Leitura relâmpago,msa;jogo;pentagrama
+VIO-MSA-F03-L01,violino,MSA,3,MSA-F03,Pulsação e ritmo,"Ritmo, pulsação e compasso","Fórmulas simples, tempos fortes e condução",COMPREENSÃO,22,2,LICAO,,MSA-F02,"Estudar pulsação e ritmo (MSA, pág. 22)",msa;fase3;ritmo
+VIO-MSA-F03-L02,violino,MSA,3,MSA-F03,Compasso e fórmula de compasso,"Ritmo, pulsação e compasso","Fórmulas simples, tempos fortes e condução",COMPREENSÃO,24,2,LICAO,,MSA-F02,"Estudar compasso e fórmula de compasso (MSA, pág. 24)",msa;fase3;ritmo
+VIO-MSA-F03-L03,violino,MSA,3,MSA-F03,Tempos fortes e fracos,"Ritmo, pulsação e compasso","Fórmulas simples, tempos fortes e condução",COMPREENSÃO,26,2,LICAO,,MSA-F02,"Estudar tempos fortes e fracos (MSA, pág. 26)",msa;fase3;ritmo
+VIO-MSA-F03-L04,violino,MSA,3,MSA-F03,Solfejo e movimentos de condução,"Ritmo, pulsação e compasso","Fórmulas simples, tempos fortes e condução",COMPREENSÃO,27,2,LICAO,,MSA-F02,"Estudar solfejo e movimentos de condução (MSA, pág. 27)",msa;fase3;ritmo
+VIO-MSA-F03-JRIT,violino,MSA,3,MSA-F03,,"Ritmo, pulsação e compasso",Fecha o compasso,APLICAÇÃO,,2,JOGO,ritmo,,Fecha o compasso,msa;jogo;ritmo
+VIO-MSA-F03-JPUL,violino,MSA,3,MSA-F03,,"Ritmo, pulsação e compasso",No compasso,APLICAÇÃO,,2,JOGO,pulso,,No compasso,msa;jogo;pulso
+VIO-MSA-F04-L01,violino,MSA,4,MSA-F04,Metrônomo e andamento,"Metrônomo, ponto de aumento e tercinas","Velocidade, prolongamento e divisão especial",COMPREENSÃO,31,2,LICAO,,MSA-F03,"Estudar metrônomo e andamento (MSA, pág. 31)",msa;fase4;duracao
+VIO-MSA-F04-L02,violino,MSA,4,MSA-F04,Ponto de aumento,"Metrônomo, ponto de aumento e tercinas","Velocidade, prolongamento e divisão especial",COMPREENSÃO,35,2,LICAO,,MSA-F03,"Estudar ponto de aumento (MSA, pág. 35)",msa;fase4;duracao
+VIO-MSA-F04-L03,violino,MSA,4,MSA-F04,Ligadura e fermata,"Metrônomo, ponto de aumento e tercinas","Velocidade, prolongamento e divisão especial",COMPREENSÃO,38,2,LICAO,,MSA-F03,"Estudar ligadura e fermata (MSA, pág. 38)",msa;fase4;duracao
+VIO-MSA-F04-L04,violino,MSA,4,MSA-F04,Tercinas,"Metrônomo, ponto de aumento e tercinas","Velocidade, prolongamento e divisão especial",COMPREENSÃO,44,2,LICAO,,MSA-F03,"Estudar tercinas (MSA, pág. 44)",msa;fase4;duracao
+VIO-MSA-F04-JPUL,violino,MSA,4,MSA-F04,,"Metrônomo, ponto de aumento e tercinas",Acerta o bpm,APLICAÇÃO,,2,JOGO,pulso,,Acerta o bpm,msa;jogo;pulso
+VIO-MSA-F04-JRIT,violino,MSA,4,MSA-F04,,"Metrônomo, ponto de aumento e tercinas",Fecha o compasso com ponto,APLICAÇÃO,,2,JOGO,ritmo,,Fecha o compasso com ponto,msa;jogo;ritmo
+VIO-MSA-F05-L01,violino,MSA,5,MSA-F05,Tom e semitom,"Tons, semitons e acidentes","Sustenido, bemol, bequadro e enarmonia",COMPREENSÃO,52,3,LICAO,,MSA-F04,"Estudar tom e semitom (MSA, pág. 52)",msa;fase5;semitons
+VIO-MSA-F05-L02,violino,MSA,5,MSA-F05,Os acidentes,"Tons, semitons e acidentes","Sustenido, bemol, bequadro e enarmonia",COMPREENSÃO,53,3,LICAO,,MSA-F04,"Estudar os acidentes (MSA, pág. 53)",msa;fase5;semitons
+VIO-MSA-F05-L03,violino,MSA,5,MSA-F05,Semitom cromático e diatônico,"Tons, semitons e acidentes","Sustenido, bemol, bequadro e enarmonia",COMPREENSÃO,53,3,LICAO,,MSA-F04,"Estudar semitom cromático e diatônico (MSA, pág. 53)",msa;fase5;semitons
+VIO-MSA-F05-L04,violino,MSA,5,MSA-F05,Enarmonia e uníssono,"Tons, semitons e acidentes","Sustenido, bemol, bequadro e enarmonia",COMPREENSÃO,54,3,LICAO,,MSA-F04,"Estudar enarmonia e uníssono (MSA, pág. 54)",msa;fase5;semitons
+VIO-MSA-F05-JTEC,violino,MSA,5,MSA-F05,,"Tons, semitons e acidentes",Caça ao semitom,APLICAÇÃO,,3,JOGO,teclado,,Caça ao semitom,msa;jogo;teclado
+VIO-MSA-F05-JMEM,violino,MSA,5,MSA-F05,,"Tons, semitons e acidentes",Memória dos acidentes,APLICAÇÃO,,3,JOGO,memoria,,Memória dos acidentes,msa;jogo;memoria
+VIO-MSA-F06-L01,violino,MSA,6,MSA-F06,A escala maior modelo,Escalas maiores e armaduras,"T T st T T T st, sustenidos e bemóis",COMPREENSÃO,61,3,LICAO,,MSA-F05,"Estudar a escala maior modelo (MSA, pág. 61)",msa;fase6;escalas
+VIO-MSA-F06-L02,violino,MSA,6,MSA-F06,Escalas com sustenidos,Escalas maiores e armaduras,"T T st T T T st, sustenidos e bemóis",COMPREENSÃO,63,3,LICAO,,MSA-F05,"Estudar escalas com sustenidos (MSA, pág. 63)",msa;fase6;escalas
+VIO-MSA-F06-L03,violino,MSA,6,MSA-F06,Escalas com bemóis,Escalas maiores e armaduras,"T T st T T T st, sustenidos e bemóis",COMPREENSÃO,61,3,LICAO,,MSA-F05,"Estudar escalas com bemóis (MSA, pág. 61)",msa;fase6;escalas
+VIO-MSA-F06-L04,violino,MSA,6,MSA-F06,Armadura de clave,Escalas maiores e armaduras,"T T st T T T st, sustenidos e bemóis",COMPREENSÃO,66,3,LICAO,,MSA-F05,"Estudar armadura de clave (MSA, pág. 66)",msa;fase6;escalas
+VIO-MSA-F06-JTEC,violino,MSA,6,MSA-F06,,Escalas maiores e armaduras,Monte a escala,APLICAÇÃO,,3,JOGO,teclado,,Monte a escala,msa;jogo;teclado
+VIO-MSA-F06-JARM,violino,MSA,6,MSA-F06,,Escalas maiores e armaduras,Que tonalidade é essa?,APLICAÇÃO,,3,JOGO,armadura,,Que tonalidade é essa?,msa;jogo;armadura
+VIO-MSA-F07-L01,violino,MSA,7,MSA-F07,Tonalidade maior e menor,"Tonalidade, intervalos e dinâmica","Maior e menor, distâncias e volume",COMPREENSÃO,80,3,LICAO,,MSA-F06,"Estudar tonalidade maior e menor (MSA, pág. 80)",msa;fase7;tonalidade
+VIO-MSA-F07-L02,violino,MSA,7,MSA-F07,Intervalos,"Tonalidade, intervalos e dinâmica","Maior e menor, distâncias e volume",COMPREENSÃO,84,3,LICAO,,MSA-F06,"Estudar intervalos (MSA, pág. 84)",msa;fase7;tonalidade
+VIO-MSA-F07-L03,violino,MSA,7,MSA-F07,Dinâmica,"Tonalidade, intervalos e dinâmica","Maior e menor, distâncias e volume",COMPREENSÃO,93,3,LICAO,,MSA-F06,"Estudar dinâmica (MSA, pág. 93)",msa;fase7;tonalidade
+VIO-MSA-F07-L04,violino,MSA,7,MSA-F07,Sinais de repetição,"Tonalidade, intervalos e dinâmica","Maior e menor, distâncias e volume",COMPREENSÃO,86,3,LICAO,,MSA-F06,"Estudar sinais de repetição (MSA, pág. 86)",msa;fase7;tonalidade
+VIO-MSA-F07-JTEC,violino,MSA,7,MSA-F07,,"Tonalidade, intervalos e dinâmica",Mede o intervalo,APLICAÇÃO,,3,JOGO,teclado,,Mede o intervalo,msa;jogo;teclado
+VIO-MSA-F07-JOUV,violino,MSA,7,MSA-F07,,"Tonalidade, intervalos e dinâmica",Forte ou fraco?,APLICAÇÃO,,3,JOGO,ouvido,,Forte ou fraco?,msa;jogo;ouvido
+VIO-MSA-F08-L01,violino,MSA,8,MSA-F08,Subdivisão binária e ternária,Compasso composto e subdivisão,"6/8, 9/8, 12/8 e a divisão do tempo",COMPREENSÃO,101,4,LICAO,,MSA-F07,"Estudar subdivisão binária e ternária (MSA, pág. 101)",msa;fase8;composto
+VIO-MSA-F08-L02,violino,MSA,8,MSA-F08,Como ler a fórmula composta,Compasso composto e subdivisão,"6/8, 9/8, 12/8 e a divisão do tempo",COMPREENSÃO,102,4,LICAO,,MSA-F07,"Estudar como ler a fórmula composta (MSA, pág. 102)",msa;fase8;composto
+VIO-MSA-F08-L03,violino,MSA,8,MSA-F08,Compasso composto e o seu simples correspondente,Compasso composto e subdivisão,"6/8, 9/8, 12/8 e a divisão do tempo",COMPREENSÃO,104,4,LICAO,,MSA-F07,"Estudar compasso composto e o seu simples correspondente (MSA, pág. 104)",msa;fase8;composto
+VIO-MSA-F08-L04,violino,MSA,8,MSA-F08,"Solfejo em 6, 9 e 12",Compasso composto e subdivisão,"6/8, 9/8, 12/8 e a divisão do tempo",COMPREENSÃO,106,4,LICAO,,MSA-F07,"Estudar solfejo em 6, 9 e 12 (MSA, pág. 106)",msa;fase8;composto
+VIO-MSA-F08-JRIT,violino,MSA,8,MSA-F08,,Compasso composto e subdivisão,Fecha o compasso composto,APLICAÇÃO,,4,JOGO,ritmo,,Fecha o compasso composto,msa;jogo;ritmo
+VIO-MSA-F08-JPUL,violino,MSA,8,MSA-F08,,Compasso composto e subdivisão,Conduzir em 6/8,APLICAÇÃO,,4,JOGO,pulso,,Conduzir em 6/8,msa;jogo;pulso
+VIO-MSA-F09-L01,violino,MSA,9,MSA-F09,Síncopa,"Síncopa, contratempo e ritmos iniciais","Tético, anacrústico e acéfalo",COMPREENSÃO,111,4,LICAO,,MSA-F08,"Estudar síncopa (MSA, pág. 111)",msa;fase9;sincopa
+VIO-MSA-F09-L02,violino,MSA,9,MSA-F09,Contratempo,"Síncopa, contratempo e ritmos iniciais","Tético, anacrústico e acéfalo",COMPREENSÃO,114,4,LICAO,,MSA-F08,"Estudar contratempo (MSA, pág. 114)",msa;fase9;sincopa
+VIO-MSA-F09-L03,violino,MSA,9,MSA-F09,Ritmos iniciais,"Síncopa, contratempo e ritmos iniciais","Tético, anacrústico e acéfalo",COMPREENSÃO,118,4,LICAO,,MSA-F08,"Estudar ritmos iniciais (MSA, pág. 118)",msa;fase9;sincopa
+VIO-MSA-F09-L04,violino,MSA,9,MSA-F09,Onde o ritmo inicial vale,"Síncopa, contratempo e ritmos iniciais","Tético, anacrústico e acéfalo",COMPREENSÃO,121,4,LICAO,,MSA-F08,"Estudar onde o ritmo inicial vale (MSA, pág. 121)",msa;fase9;sincopa
+VIO-MSA-F09-JRIT,violino,MSA,9,MSA-F09,,"Síncopa, contratempo e ritmos iniciais",Síncopa ou contratempo?,APLICAÇÃO,,4,JOGO,ritmo,,Síncopa ou contratempo?,msa;jogo;ritmo
+VIO-MSA-F09-JMEM,violino,MSA,9,MSA-F09,,"Síncopa, contratempo e ritmos iniciais",Memória dos ritmos iniciais,APLICAÇÃO,,4,JOGO,memoria,,Memória dos ritmos iniciais,msa;jogo;memoria
+VIO-MSA-F10-L01,violino,MSA,10,MSA-F10,Notas pontuadas na subdivisão,"Interpretação, andamento e forma","Termos, agógica, frase e semifrase",COMPREENSÃO,126,5,LICAO,,MSA-F09,"Estudar notas pontuadas na subdivisão (MSA, pág. 126)",msa;fase10;interpretacao
+VIO-MSA-F10-L02,violino,MSA,10,MSA-F10,Termos de andamento,"Interpretação, andamento e forma","Termos, agógica, frase e semifrase",COMPREENSÃO,129,5,LICAO,,MSA-F09,"Estudar termos de andamento (MSA, pág. 129)",msa;fase10;interpretacao
+VIO-MSA-F10-L03,violino,MSA,10,MSA-F10,Mudanças de andamento e expressão,"Interpretação, andamento e forma","Termos, agógica, frase e semifrase",COMPREENSÃO,131,5,LICAO,,MSA-F09,"Estudar mudanças de andamento e expressão (MSA, pág. 131)",msa;fase10;interpretacao
+VIO-MSA-F10-L04,violino,MSA,10,MSA-F10,Frase e semifrase,"Interpretação, andamento e forma","Termos, agógica, frase e semifrase",COMPREENSÃO,136,5,LICAO,,MSA-F09,"Estudar frase e semifrase (MSA, pág. 136)",msa;fase10;interpretacao
+VIO-MSA-F10-JMEM,violino,MSA,10,MSA-F10,,"Interpretação, andamento e forma",Memória dos andamentos,APLICAÇÃO,,5,JOGO,memoria,,Memória dos andamentos,msa;jogo;memoria
+VIO-MSA-F10-JPEN,violino,MSA,10,MSA-F10,,"Interpretação, andamento e forma",Leitura relâmpago — final,APLICAÇÃO,,5,JOGO,pentagrama,,Leitura relâmpago — final,msa;jogo;pentagrama
+VIO-MSA-F01-Q001,violino,MSA,1,MSA-F01,,Cifras das notas,f1.cifra,MEMORIZAÇÃO,11,1,QUESTAO,multipla_escolha,,Avaliar: cifras das notas,msa;fase1;gerador;14variantes
+VIO-MSA-F01-Q002,violino,MSA,1,MSA-F01,,Conceitos e definições,f1.conceitos,MEMORIZAÇÃO,9,1,QUESTAO,multipla_escolha,,Avaliar: conceitos e definições,msa;fase1;gerador;12variantes
+VIO-MSA-F01-Q003,violino,MSA,1,MSA-F01,,Contar notas na série,f1.contagem-na-serie,APLICAÇÃO,11,1,QUESTAO,multipla_escolha,,Avaliar: contar notas na série,msa;fase1;gerador;42variantes
+VIO-MSA-F01-Q004,violino,MSA,1,MSA-F01,,Ordem das sete notas,f1.ordem-das-notas,MEMORIZAÇÃO,11,1,QUESTAO,multipla_escolha,,Avaliar: ordem das sete notas,msa;fase1;gerador;28variantes
+VIO-MSA-F01-Q005,violino,MSA,1,MSA-F01,,Propriedades do som,f1.propriedade,COMPREENSÃO,10,1,QUESTAO,multipla_escolha,,Avaliar: propriedades do som,msa;fase1;gerador;12variantes
+VIO-MSA-F01-Q006,violino,MSA,1,MSA-F01,,Propriedades do som pelo exemplo,f1.propriedade-exemplo,ANÁLISE,10,1,QUESTAO,multipla_escolha,,Avaliar: propriedades do som pelo exemplo,msa;fase1;gerador;12variantes
+VIO-MSA-F02-Q001,violino,MSA,2,MSA-F02,,Linha de apoio das claves,f2.clave-linha,MEMORIZAÇÃO,13,1,QUESTAO,multipla_escolha,,Avaliar: linha de apoio das claves,msa;fase2;gerador;9variantes
+VIO-MSA-F02-Q002,violino,MSA,2,MSA-F02,,Equivalência entre figuras,f2.equivalencia,APLICAÇÃO,17,1,QUESTAO,multipla_escolha,,Avaliar: equivalência entre figuras,msa;fase2;gerador;15variantes
+VIO-MSA-F02-Q003,violino,MSA,2,MSA-F02,,Valor das figuras,f2.figura-valor,COMPREENSÃO,15,1,QUESTAO,multipla_escolha,,Avaliar: valor das figuras,msa;fase2;gerador;12variantes
+VIO-MSA-F02-Q004,violino,MSA,2,MSA-F02,,Ler nota no pentagrama,f2.ler-nota,APLICAÇÃO,13,1,QUESTAO,multipla_escolha,,Avaliar: ler nota no pentagrama,msa;fase2;gerador;36variantes
+VIO-MSA-F02-Q005,violino,MSA,2,MSA-F02,,Onde se escreve a nota,f2.lugar-da-nota,APLICAÇÃO,12,1,QUESTAO,multipla_escolha,,Avaliar: onde se escreve a nota,msa;fase2;gerador;27variantes
+VIO-MSA-F02-Q006,violino,MSA,2,MSA-F02,,Número de equivalência,f2.numero-equivalencia,MEMORIZAÇÃO,17,1,QUESTAO,multipla_escolha,,Avaliar: número de equivalência,msa;fase2;gerador;14variantes
+VIO-MSA-F02-Q007,violino,MSA,2,MSA-F02,,Partes da nota,f2.partes-da-nota,MEMORIZAÇÃO,12 e 19,1,QUESTAO,multipla_escolha,,Avaliar: partes da nota,msa;fase2;gerador;12variantes
+VIO-MSA-F02-Q008,violino,MSA,2,MSA-F02,,Valor das pausas,f2.pausas,COMPREENSÃO,17,1,QUESTAO,multipla_escolha,,Avaliar: valor das pausas,msa;fase2;gerador;12variantes
+VIO-MSA-F03-Q001,violino,MSA,3,MSA-F03,,Figura que completa o compasso,f3.completa-compasso,ANÁLISE,24,2,QUESTAO,multipla_escolha,,Avaliar: figura que completa o compasso,msa;fase3;gerador;24variantes
+VIO-MSA-F03-Q002,violino,MSA,3,MSA-F03,,Conceitos e definições,f3.conceitos,MEMORIZAÇÃO,22 a 28,2,QUESTAO,multipla_escolha,,Avaliar: conceitos e definições,msa;fase3;gerador;16variantes
+VIO-MSA-F03-Q003,violino,MSA,3,MSA-F03,,Movimentos de condução,f3.conducao,EXECUÇÃO,28,2,QUESTAO,multipla_escolha,,Avaliar: movimentos de condução,msa;fase3;gerador;9variantes
+VIO-MSA-F03-Q004,violino,MSA,3,MSA-F03,,Espécie do compasso,f3.formula-especie,ANÁLISE,24,2,QUESTAO,multipla_escolha,,Avaliar: espécie do compasso,msa;fase3;gerador;9variantes
+VIO-MSA-F03-Q005,violino,MSA,3,MSA-F03,,Tempos da fórmula de compasso,f3.formula-tempos,COMPREENSÃO,24,2,QUESTAO,multipla_escolha,,Avaliar: tempos da fórmula de compasso,msa;fase3;gerador;18variantes
+VIO-MSA-F03-Q006,violino,MSA,3,MSA-F03,,Unidade de tempo,f3.formula-unidade,COMPREENSÃO,24,2,QUESTAO,multipla_escolha,,Avaliar: unidade de tempo,msa;fase3;gerador;9variantes
+VIO-MSA-F03-Q007,violino,MSA,3,MSA-F03,,Quantas figuras cabem no compasso,f3.quantas-figuras,APLICAÇÃO,24,2,QUESTAO,multipla_escolha,,Avaliar: quantas figuras cabem no compasso,msa;fase3;gerador;35variantes
+VIO-MSA-F03-Q008,violino,MSA,3,MSA-F03,,Tempos fortes e fracos,f3.tempo-forte,COMPREENSÃO,26,2,QUESTAO,multipla_escolha,,Avaliar: tempos fortes e fracos,msa;fase3;gerador;18variantes
+VIO-MSA-F04-Q001,violino,MSA,4,MSA-F04,,Comparar durações,f4.compara-valores,ANÁLISE,35 e 38,2,QUESTAO,multipla_escolha,,Avaliar: comparar durações,msa;fase4;gerador;63variantes
+VIO-MSA-F04-Q002,violino,MSA,4,MSA-F04,,Conceitos e definições,f4.conceitos,MEMORIZAÇÃO,35 a 44,2,QUESTAO,multipla_escolha,,Avaliar: conceitos e definições,msa;fase4;gerador;8variantes
+VIO-MSA-F04-Q003,violino,MSA,4,MSA-F04,,Duração da figura em segundos,f4.duracao-em-segundos,APLICAÇÃO,31,2,QUESTAO,multipla_escolha,,Avaliar: duração da figura em segundos,msa;fase4;gerador;24variantes
+VIO-MSA-F04-Q004,violino,MSA,4,MSA-F04,,Ligadura de valor,f4.ligadura,APLICAÇÃO,38,2,QUESTAO,multipla_escolha,,Avaliar: ligadura de valor,msa;fase4;gerador;14variantes
+VIO-MSA-F04-Q005,violino,MSA,4,MSA-F04,,Média da faixa de andamento,f4.media-da-faixa,APLICAÇÃO,31,2,QUESTAO,multipla_escolha,,Avaliar: média da faixa de andamento,msa;fase4;gerador;24variantes
+VIO-MSA-F04-Q006,violino,MSA,4,MSA-F04,,Metrônomo e andamento,f4.metronomo,COMPREENSÃO,31,2,QUESTAO,multipla_escolha,,Avaliar: metrônomo e andamento,msa;fase4;gerador;6variantes
+VIO-MSA-F04-Q007,violino,MSA,4,MSA-F04,,Ponto de aumento,f4.ponto-de-aumento,COMPREENSÃO,35,2,QUESTAO,multipla_escolha,,Avaliar: ponto de aumento,msa;fase4;gerador;15variantes
+VIO-MSA-F04-Q008,violino,MSA,4,MSA-F04,,Tercinas,f4.tercina-conta,COMPREENSÃO,44,2,QUESTAO,multipla_escolha,,Avaliar: tercinas,msa;fase4;gerador;12variantes
+VIO-MSA-F05-Q001,violino,MSA,5,MSA-F05,,O que cada acidente faz,f5.acidentes,MEMORIZAÇÃO,53,3,QUESTAO,multipla_escolha,,Avaliar: o que cada acidente faz,msa;fase5;gerador;10variantes
+VIO-MSA-F05-Q002,violino,MSA,5,MSA-F05,,Alterar a nota com acidente,f5.altera-nota,APLICAÇÃO,52 e 53,3,QUESTAO,multipla_escolha,,Avaliar: alterar a nota com acidente,msa;fase5;gerador;28variantes
+VIO-MSA-F05-Q003,violino,MSA,5,MSA-F05,,Conceitos e definições,f5.conceitos,MEMORIZAÇÃO,52 a 54,3,QUESTAO,multipla_escolha,,Avaliar: conceitos e definições,msa;fase5;gerador;8variantes
+VIO-MSA-F05-Q004,violino,MSA,5,MSA-F05,,Enarmonia,f5.enarmonia,COMPREENSÃO,54,3,QUESTAO,multipla_escolha,,Avaliar: enarmonia,msa;fase5;gerador;18variantes
+VIO-MSA-F05-Q005,violino,MSA,5,MSA-F05,,Tipo de semitom,f5.tipo-de-semitom,ANÁLISE,53 e 54,3,QUESTAO,multipla_escolha,,Avaliar: tipo de semitom,msa;fase5;gerador;23variantes
+VIO-MSA-F05-Q006,violino,MSA,5,MSA-F05,,Tom ou semitom,f5.tom-ou-semitom,COMPREENSÃO,52,3,QUESTAO,multipla_escolha,,Avaliar: tom ou semitom,msa;fase5;gerador;14variantes
+VIO-MSA-F06-Q001,violino,MSA,6,MSA-F06,,Da armadura à tonalidade,f6.armadura-para-tonalidade,ANÁLISE,66,3,QUESTAO,multipla_escolha,,Avaliar: da armadura à tonalidade,msa;fase6;gerador;26variantes
+VIO-MSA-F06-Q002,violino,MSA,6,MSA-F06,,Acidentes de cada escala,f6.escala-tem-acidente,APLICAÇÃO,61 a 66,3,QUESTAO,multipla_escolha,,Avaliar: acidentes de cada escala,msa;fase6;gerador;12variantes
+VIO-MSA-F06-Q003,violino,MSA,6,MSA-F06,,Graus da escala maior,f6.grau-da-escala,APLICAÇÃO,61 a 65,3,QUESTAO,multipla_escolha,,Avaliar: graus da escala maior,msa;fase6;gerador;78variantes
+VIO-MSA-F06-Q004,violino,MSA,6,MSA-F06,,Ordem dos acidentes,f6.ordem-dos-acidentes,MEMORIZAÇÃO,66,3,QUESTAO,multipla_escolha,,Avaliar: ordem dos acidentes,msa;fase6;gerador;14variantes
+VIO-MSA-F06-Q005,violino,MSA,6,MSA-F06,,Padrão de tons e semitons,f6.padrao,COMPREENSÃO,61 a 66,3,QUESTAO,multipla_escolha,,Avaliar: padrão de tons e semitons,msa;fase6;gerador;9variantes
+VIO-MSA-F06-Q006,violino,MSA,6,MSA-F06,,Próxima escala no ciclo,f6.proxima-escala,ANÁLISE,61 a 65,3,QUESTAO,multipla_escolha,,Avaliar: próxima escala no ciclo,msa;fase6;gerador;12variantes
+VIO-MSA-F06-Q007,violino,MSA,6,MSA-F06,,Quantos acidentes na armadura,f6.quantos-acidentes,MEMORIZAÇÃO,66,3,QUESTAO,multipla_escolha,,Avaliar: quantos acidentes na armadura,msa;fase6;gerador;30variantes
+VIO-MSA-F07-Q001,violino,MSA,7,MSA-F07,,Conceitos e definições,f7.conceitos,MEMORIZAÇÃO,80 a 93,3,QUESTAO,multipla_escolha,,Avaliar: conceitos e definições,msa;fase7;gerador;13variantes
+VIO-MSA-F07-Q002,violino,MSA,7,MSA-F07,,Sinais de dinâmica,f7.dinamica,MEMORIZAÇÃO,93,3,QUESTAO,multipla_escolha,,Avaliar: sinais de dinâmica,msa;fase7;gerador;18variantes
+VIO-MSA-F07-Q003,violino,MSA,7,MSA-F07,,Identificar o intervalo,f7.intervalo,APLICAÇÃO,84,3,QUESTAO,multipla_escolha,,Avaliar: identificar o intervalo,msa;fase7;gerador;42variantes
+VIO-MSA-F07-Q004,violino,MSA,7,MSA-F07,,Tamanho do intervalo,f7.intervalo-tamanho,MEMORIZAÇÃO,84,3,QUESTAO,multipla_escolha,,Avaliar: tamanho do intervalo,msa;fase7;gerador;18variantes
+VIO-MSA-F07-Q005,violino,MSA,7,MSA-F07,,Tonalidades relativas,f7.relativa,ANÁLISE,80,3,QUESTAO,multipla_escolha,,Avaliar: tonalidades relativas,msa;fase7;gerador;30variantes
+VIO-MSA-F08-Q001,violino,MSA,8,MSA-F08,,Tempos do compasso composto,f8.composto-tempos,COMPREENSÃO,102,4,QUESTAO,multipla_escolha,,Avaliar: tempos do compasso composto,msa;fase8;gerador;16variantes
+VIO-MSA-F08-Q002,violino,MSA,8,MSA-F08,,Unidade de tempo no composto,f8.composto-unidade,COMPREENSÃO,102,4,QUESTAO,multipla_escolha,,Avaliar: unidade de tempo no composto,msa;fase8;gerador;8variantes
+VIO-MSA-F08-Q003,violino,MSA,8,MSA-F08,,Conceitos e definições,f8.conceitos,MEMORIZAÇÃO,101 a 106,4,QUESTAO,multipla_escolha,,Avaliar: conceitos e definições,msa;fase8;gerador;9variantes
+VIO-MSA-F08-Q004,violino,MSA,8,MSA-F08,,Condução do compasso composto,f8.conducao-composto,EXECUÇÃO,104,4,QUESTAO,multipla_escolha,,Avaliar: condução do compasso composto,msa;fase8;gerador;24variantes
+VIO-MSA-F08-Q005,violino,MSA,8,MSA-F08,,Simples correspondente ao composto,f8.correspondencia,ANÁLISE,104,4,QUESTAO,multipla_escolha,,Avaliar: simples correspondente ao composto,msa;fase8;gerador;16variantes
+VIO-MSA-F08-Q006,violino,MSA,8,MSA-F08,,Figuras no compasso composto,f8.figuras-no-composto,APLICAÇÃO,102,4,QUESTAO,multipla_escolha,,Avaliar: figuras no compasso composto,msa;fase8;gerador;20variantes
+VIO-MSA-F08-Q007,violino,MSA,8,MSA-F08,,Simples ou composto,f8.simples-ou-composto,ANÁLISE,101 e 102,4,QUESTAO,multipla_escolha,,Avaliar: simples ou composto,msa;fase8;gerador;17variantes
+VIO-MSA-F08-Q008,violino,MSA,8,MSA-F08,,Divisão do tempo no composto,f8.tempo-em-figuras,COMPREENSÃO,102,4,QUESTAO,multipla_escolha,,Avaliar: divisão do tempo no composto,msa;fase8;gerador;16variantes
+VIO-MSA-F09-Q001,violino,MSA,9,MSA-F09,,Medida do ritmo acéfalo,f9.acefalo-medida,COMPREENSÃO,118,4,QUESTAO,multipla_escolha,,Avaliar: medida do ritmo acéfalo,msa;fase9;gerador;16variantes
+VIO-MSA-F09-Q002,violino,MSA,9,MSA-F09,,Conceitos e definições,f9.conceitos,MEMORIZAÇÃO,111 a 121,4,QUESTAO,multipla_escolha,,Avaliar: conceitos e definições,msa;fase9;gerador;14variantes
+VIO-MSA-F09-Q003,violino,MSA,9,MSA-F09,,Hinos acéfalos do hinário,f9.hinos,MEMORIZAÇÃO,121,4,QUESTAO,multipla_escolha,,Avaliar: hinos acéfalos do hinário,msa;fase9;gerador;6variantes
+VIO-MSA-F09-Q004,violino,MSA,9,MSA-F09,,Padrões rítmicos,f9.padrao-ritmico,ANÁLISE,111 e 114,4,QUESTAO,multipla_escolha,,Avaliar: padrões rítmicos,msa;fase9;gerador;16variantes
+VIO-MSA-F09-Q005,violino,MSA,9,MSA-F09,,Ritmo inicial do trecho,f9.ritmo-inicial-caso,ANÁLISE,118,4,QUESTAO,multipla_escolha,,Avaliar: ritmo inicial do trecho,msa;fase9;gerador;24variantes
+VIO-MSA-F09-Q006,violino,MSA,9,MSA-F09,,Síncopa e contratempo,f9.sincopa-contratempo,ANÁLISE,111 e 114,4,QUESTAO,multipla_escolha,,Avaliar: síncopa e contratempo,msa;fase9;gerador;24variantes
+VIO-MSA-F10-Q001,violino,MSA,10,MSA-F10,,Termos de andamento,f10.andamento,MEMORIZAÇÃO,129,5,QUESTAO,multipla_escolha,,Avaliar: termos de andamento,msa;fase10;gerador;18variantes
+VIO-MSA-F10-Q002,violino,MSA,10,MSA-F10,,Do bpm ao termo de andamento,f10.bpm-para-termo,APLICAÇÃO,129,5,QUESTAO,multipla_escolha,,Avaliar: do bpm ao termo de andamento,msa;fase10;gerador;15variantes
+VIO-MSA-F10-Q003,violino,MSA,10,MSA-F10,,Classificar a indicação,f10.classifica-indicacao,ANÁLISE,93 e 131,5,QUESTAO,multipla_escolha,,Avaliar: classificar a indicação,msa;fase10;gerador;28variantes
+VIO-MSA-F10-Q004,violino,MSA,10,MSA-F10,,Termos de expressão,f10.expressao,MEMORIZAÇÃO,131,5,QUESTAO,multipla_escolha,,Avaliar: termos de expressão,msa;fase10;gerador;16variantes
+VIO-MSA-F10-Q005,violino,MSA,10,MSA-F10,,Forma: frase e semifrase,f10.forma,COMPREENSÃO,131 a 138,5,QUESTAO,multipla_escolha,,Avaliar: forma: frase e semifrase,msa;fase10;gerador;10variantes
+VIO-MSA-F10-Q006,violino,MSA,10,MSA-F10,,Comparar andamentos,f10.mais-rapido,ANÁLISE,129,5,QUESTAO,multipla_escolha,,Avaliar: comparar andamentos,msa;fase10;gerador;30variantes
+VIO-MSA-F10-Q007,violino,MSA,10,MSA-F10,,Figura pontuada no contexto,f10.pontuada-no-contexto,APLICAÇÃO,126,5,QUESTAO,multipla_escolha,,Avaliar: figura pontuada no contexto,msa;fase10;gerador;12variantes
