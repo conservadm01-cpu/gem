@@ -7259,6 +7259,23 @@ async function cadastrar(email, senha, nome) {
   return { ok: true, perfil };
 }
 
+/**
+ * Reenvia o e-mail de confirmação.
+ *
+ * Existe porque a confirmação por e-mail é um beco sem saída quando a
+ * mensagem não chega — e o servidor de e-mail que vem por padrão no Supabase
+ * entrega pouco. Sem isto, quem cria conta e não recebe o link não tem como
+ * voltar atrás: o e-mail já está tomado e não dá para cadastrar de novo.
+ */
+async function reenviarConfirmacao(email) {
+  if (!configurada()) return { ok: false, erro: 'Este app não está ligado a um banco.' };
+  const { resposta, dados } = await bruto('/auth/v1/resend', {
+    metodo: 'POST', corpo: { type: 'signup', email: String(email || '').trim() }, autenticado: false,
+  });
+  if (!resposta.ok) return { ok: false, erro: explicar(resposta, dados) };
+  return { ok: true };
+}
+
 function sair() {
   const s = ler();
   if (s && s.token) {
@@ -7300,7 +7317,7 @@ async function ligarContaLocal(idLocal) {
 
 const chamar = (nome, argumentos) => pedir(`/rest/v1/rpc/${nome}`, { metodo: 'POST', corpo: argumentos || {} });
 
-return { configurada, usuario, entrar, cadastrar, sair, meuPerfil, perfis, ligarContaLocal, chamar, renovar };
+return { configurada, usuario, entrar, cadastrar, sair, meuPerfil, perfis, ligarContaLocal, chamar, renovar, reenviarConfirmacao };
 })();
 
 __modulos['sincronia'] = (function () {
@@ -8045,6 +8062,10 @@ function telaRelatorio() {
     </section>`;
 }
 
+// Quem criou conta e ficou esperando o e-mail de confirmação. Guardado para a
+// tela poder oferecer o reenvio sem pedir o endereço de novo.
+let aguardandoConfirmacao = '';
+
 // Relatório da turma: vem do servidor, então tem os três estados de sempre.
 let relatorioDaTurma = null;
 
@@ -8127,10 +8148,23 @@ function telaNuvem() {
         <h3>Ainda não tenho conta</h3>
         <label for="nu-nome">Nome</label>
         <input id="nu-nome" type="text" autocomplete="name" maxlength="60" placeholder="Como quer ser chamado">
-        <p class="mini">A conta nova entra como aluno. Quem cuida do painel promove depois.</p>
+        <p class="mini">A primeira conta do sistema vira administrador. As seguintes entram
+        como aluno, e quem cuida do painel promove depois.</p>
         <div class="acoes"><button class="botao secundario" data-acao="adm:nuvem-cadastrar">Criar conta</button></div>
         ${situacao.recado ? `<p class="mini">${escapar(situacao.recado)}</p>` : ''}
-      </section>`;
+      </section>
+      ${aguardandoConfirmacao ? `<section class="admin">
+        <h3>Esperando a confirmação de ${escapar(aguardandoConfirmacao)}</h3>
+        <p class="mini">A conta foi criada, mas o servidor exige confirmar o e-mail antes do
+        primeiro acesso. Se a mensagem não chegou — o serviço de e-mail que vem de fábrica
+        entrega pouco —, reenvie aqui.</p>
+        <div class="acoes">
+          <button class="botao secundario" data-acao="adm:nuvem-reenviar">Reenviar o e-mail</button>
+        </div>
+        <p class="mini">Para dispensar a confirmação de vez, quem administra o banco desliga
+        em <b>Authentication → Providers → Email → Confirm email</b>. Depois disso, criar conta
+        passa a entrar direto.</p>
+      </section>` : ''}`;
   }
 
   const u = situacao.usuario;
@@ -9549,8 +9583,8 @@ function acaoPainel(acao, botao) {
       nuvem.cadastrar(email, senha, quem).then((r) => {
         if (!r.ok) return falhar(r.erro);
         if (r.confirmar) {
+          aguardandoConfirmacao = email;
           botao.disabled = false;
-          recado('Conta criada. Confirme pelo link enviado no e-mail e depois entre por aqui.');
           return desenhar();
         }
         const p = r.perfil || {};
@@ -9589,6 +9623,15 @@ function acaoPainel(acao, botao) {
         auditoria.registrar(auditoria.ACOES.PUBLICAR_METODO, { entidade: 'nuvem', detalhes: 'conteúdo publicado no servidor' });
         terminar();
       }).catch((erro) => falhar(erro.message || 'Não deu para publicar.'));
+      return true;
+    }
+
+    if (nome === 'nuvem-reenviar') {
+      nuvem.reenviarConfirmacao(aguardandoConfirmacao).then((r) => {
+        if (!r.ok) return falhar(r.erro);
+        recado('E-mail reenviado. Confira também a caixa de spam.');
+        terminar();
+      }).catch((erro) => falhar(erro.message || 'Não deu para reenviar.'));
       return true;
     }
 
