@@ -7170,6 +7170,24 @@ function guardarEntrada(dados, usuarioAnterior) {
   return ler();
 }
 
+/** Endereço do próprio app, sem o roteamento — é para cá que o link volta. */
+const enderecoDeRetorno = () => `${window.location.origin}${window.location.pathname}`;
+
+/**
+ * Lê o miolo do token de acesso. Não confere assinatura nenhuma: quem valida o
+ * token é o servidor, a cada chamada. Aqui só se quer saber de quem ele é,
+ * para montar a sessão sem uma ida extra à rede.
+ */
+function dadosDoToken(token) {
+  try {
+    const meio = String(token).split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
+    const bytes = Uint8Array.from(atob(meio), (c) => c.charCodeAt(0));
+    return JSON.parse(new TextDecoder().decode(bytes));
+  } catch (erro) {
+    return {};
+  }
+}
+
 /** Mensagem de erro em português, a partir do que o servidor devolveu. */
 function explicar(resposta, corpo) {
   const dito = (corpo && (corpo.msg || corpo.message || corpo.error_description || corpo.error || corpo.hint)) || '';
@@ -7241,39 +7259,85 @@ async function entrar(email, senha) {
   return { ok: true, perfil };
 }
 
-async function cadastrar(email, senha, nome) {
+/**
+ * Manda para o e-mail um link de acesso.
+ *
+ * É por aqui que o aluno entra pela primeira vez: ele informa o e-mail, recebe
+ * o link e só então cria a senha. Ninguém escolhe senha antes de provar que o
+ * endereço é seu, e não existe cadastro pela metade esperando confirmação.
+ *
+ * `create_user` faz a conta nascer no primeiro pedido, então o mesmo caminho
+ * serve para quem já tem conta e para quem ainda não tem — sem duas telas
+ * dizendo coisas parecidas.
+ */
+async function enviarLinkDeAcesso(email, { criarConta = true } = {}) {
   if (!configurada()) return { ok: false, erro: 'Este app não está ligado a um banco.' };
-  const { resposta, dados } = await bruto('/auth/v1/signup', {
+  const endereco = String(email || '').trim();
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(endereco)) {
+    return { ok: false, erro: 'Informe um e-mail válido.' };
+  }
+  const { resposta, dados } = await bruto(`/auth/v1/otp?redirect_to=${encodeURIComponent(enderecoDeRetorno())}`, {
     metodo: 'POST',
-    corpo: { email: String(email || '').trim(), password: String(senha || ''), data: { nome: String(nome || '').trim() } },
+    corpo: { email: endereco, create_user: criarConta },
     autenticado: false,
   });
   if (!resposta.ok) return { ok: false, erro: explicar(resposta, dados) };
-  // Com a confirmação de e-mail ligada no Supabase, o cadastro não devolve
-  // sessão: a pessoa precisa clicar no link antes de entrar.
-  if (!dados || !dados.access_token) {
-    return { ok: true, confirmar: true };
+  return { ok: true };
+}
+
+/** Define a senha de quem já entrou pelo link. */
+async function definirSenha(senha) {
+  if (!usuario()) return { ok: false, erro: 'Entre pelo link do e-mail antes de criar a senha.' };
+  if (String(senha || '').length < 6) return { ok: false, erro: 'A senha precisa de pelo menos 6 caracteres.' };
+  try {
+    await pedir('/auth/v1/user', { metodo: 'PUT', corpo: { password: String(senha) } });
+    return { ok: true };
+  } catch (erro) {
+    return { ok: false, erro: erro.message };
   }
-  guardarEntrada(dados);
-  const perfil = await meuPerfil();
-  return { ok: true, perfil };
 }
 
 /**
- * Reenvia o e-mail de confirmação.
+ * Volta do link enviado por e-mail.
  *
- * Existe porque a confirmação por e-mail é um beco sem saída quando a
- * mensagem não chega — e o servidor de e-mail que vem por padrão no Supabase
- * entrega pouco. Sem isto, quem cria conta e não recebe o link não tem como
- * voltar atrás: o e-mail já está tomado e não dá para cadastrar de novo.
+ * O Supabase devolve a pessoa ao app com os tokens depois do `#`. Sem ler isso
+ * aqui, clicar no link não loga ninguém: a pessoa volta para a tela de entrada
+ * sem entender por quê, e o cadastro parece não ter funcionado.
+ *
+ * A URL é limpa em seguida, para o token não ficar no histórico do navegador.
  */
-async function reenviarConfirmacao(email) {
-  if (!configurada()) return { ok: false, erro: 'Este app não está ligado a um banco.' };
-  const { resposta, dados } = await bruto('/auth/v1/resend', {
-    metodo: 'POST', corpo: { type: 'signup', email: String(email || '').trim() }, autenticado: false,
+async function capturarRetornoDeEmail() {
+  const pedaco = window.location.hash.startsWith('#') ? window.location.hash.slice(1) : '';
+  if (!pedaco.includes('access_token=') && !pedaco.includes('error')) return null;
+
+  const campos = new URLSearchParams(pedaco);
+  const limpar = () => {
+    try {
+      window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}#/`);
+    } catch (erro) { window.location.hash = '#/'; }
+  };
+
+  const problema = campos.get('error_description') || campos.get('error');
+  if (problema) {
+    limpar();
+    const texto = decodeURIComponent(String(problema).replace(/\+/g, ' '));
+    return { ok: false, erro: /expired|invalid/i.test(texto)
+      ? 'O link do e-mail venceu ou já foi usado. Peça um novo na tela de entrada.'
+      : texto };
+  }
+
+  const token = campos.get('access_token');
+  if (!token) { limpar(); return null; }
+  const miolo = dadosDoToken(token);
+  guardarEntrada({
+    access_token: token,
+    refresh_token: campos.get('refresh_token') || '',
+    expires_in: campos.get('expires_in') || 3600,
+    user: { id: miolo.sub || '', email: miolo.email || '', user_metadata: miolo.user_metadata || {} },
   });
-  if (!resposta.ok) return { ok: false, erro: explicar(resposta, dados) };
-  return { ok: true };
+  limpar();
+  const perfil = await meuPerfil();
+  return { ok: true, perfil, tipo: campos.get('type') || 'magiclink' };
 }
 
 function sair() {
@@ -7317,7 +7381,8 @@ async function ligarContaLocal(idLocal) {
 
 const chamar = (nome, argumentos) => pedir(`/rest/v1/rpc/${nome}`, { metodo: 'POST', corpo: argumentos || {} });
 
-return { configurada, usuario, entrar, cadastrar, sair, meuPerfil, perfis, ligarContaLocal, chamar, renovar, reenviarConfirmacao };
+return { configurada, usuario, entrar, sair, meuPerfil, perfis, ligarContaLocal, chamar, renovar,
+  enviarLinkDeAcesso, definirSenha, capturarRetornoDeEmail, enderecoDeRetorno };
 })();
 
 __modulos['sincronia'] = (function () {
@@ -8062,9 +8127,10 @@ function telaRelatorio() {
     </section>`;
 }
 
-// Quem criou conta e ficou esperando o e-mail de confirmação. Guardado para a
-// tela poder oferecer o reenvio sem pedir o endereço de novo.
-let aguardandoConfirmacao = '';
+// Para quem o link foi enviado, e se a pessoa acabou de chegar por ele e ainda
+// não tem senha. Guardados aqui para a tela não precisar perguntar de novo.
+let linkEnviadoPara = '';
+let criandoSenha = false;
 
 // Relatório da turma: vem do servidor, então tem os três estados de sempre.
 let relatorioDaTurma = null;
@@ -8135,36 +8201,57 @@ function telaNuvem() {
   }
 
   if (!situacao.usuario) {
-    return `${cabecalho('Guardar no servidor', '#/acesso')}
+    // Caminho principal: o aluno informa o e-mail e recebe um link. A senha
+    // vem depois, já dentro do app — ninguém escolhe senha antes de provar que
+    // o endereço é seu, e não fica cadastro pela metade esperando confirmação.
+    return `${cabecalho('Entrar', '#/acesso')}
       <section class="admin">
-        <p class="mini">Entrando com a sua conta, o que você estudar fica guardado
-        no servidor e volta em qualquer aparelho. Sem entrar, o app continua
-        funcionando normalmente, guardando tudo aqui.</p>
+        <p class="mini">Informe o seu e-mail. Você recebe um link, e é por ele que entra
+        pela primeira vez — a senha você cria em seguida. Sem isso, o app continua
+        funcionando normalmente, guardando tudo neste aparelho.</p>
         <label for="nu-email">E-mail</label>
-        <input id="nu-email" type="email" autocomplete="username" maxlength="120">
-        <label for="nu-senha">Senha</label>
-        <input id="nu-senha" type="password" autocomplete="current-password" maxlength="72">
-        <div class="acoes"><button class="botao grande" data-acao="adm:nuvem-entrar">Entrar</button></div>
-        <h3>Ainda não tenho conta</h3>
-        <label for="nu-nome">Nome</label>
-        <input id="nu-nome" type="text" autocomplete="name" maxlength="60" placeholder="Como quer ser chamado">
-        <p class="mini">A primeira conta do sistema vira administrador. As seguintes entram
-        como aluno, e quem cuida do painel promove depois.</p>
-        <div class="acoes"><button class="botao secundario" data-acao="adm:nuvem-cadastrar">Criar conta</button></div>
+        <input id="nu-email" type="email" autocomplete="email" maxlength="120" value="${escapar(linkEnviadoPara)}">
+        <div class="acoes"><button class="botao grande" data-acao="adm:nuvem-link">Receber link de acesso</button></div>
         ${situacao.recado ? `<p class="mini">${escapar(situacao.recado)}</p>` : ''}
       </section>
-      ${aguardandoConfirmacao ? `<section class="admin">
-        <h3>Esperando a confirmação de ${escapar(aguardandoConfirmacao)}</h3>
-        <p class="mini">A conta foi criada, mas o servidor exige confirmar o e-mail antes do
-        primeiro acesso. Se a mensagem não chegou — o serviço de e-mail que vem de fábrica
-        entrega pouco —, reenvie aqui.</p>
+
+      ${linkEnviadoPara ? `<section class="admin">
+        <h3>Link enviado para ${escapar(linkEnviadoPara)}</h3>
+        <p class="mini">Abra a mensagem e clique no link. Ele traz você de volta para cá,
+        já com a sessão aberta. Confira também a caixa de spam.</p>
         <div class="acoes">
-          <button class="botao secundario" data-acao="adm:nuvem-reenviar">Reenviar o e-mail</button>
+          <button class="botao secundario" data-acao="adm:nuvem-link">Enviar de novo</button>
         </div>
-        <p class="mini">Para dispensar a confirmação de vez, quem administra o banco desliga
-        em <b>Authentication → Providers → Email → Confirm email</b>. Depois disso, criar conta
-        passa a entrar direto.</p>
-      </section>` : ''}`;
+      </section>` : ''}
+
+      <section class="admin">
+        <h3>Já tenho senha</h3>
+        <label for="nu-email-senha">E-mail</label>
+        <input id="nu-email-senha" type="email" autocomplete="username" maxlength="120">
+        <label for="nu-senha">Senha</label>
+        <input id="nu-senha" type="password" autocomplete="current-password" maxlength="72">
+        <div class="acoes"><button class="botao secundario" data-acao="adm:nuvem-entrar">Entrar com a senha</button></div>
+      </section>`;
+  }
+
+  // Voltou do link e ainda não definiu senha nesta conta.
+  if (criandoSenha) {
+    return `${cabecalho('Criar a sua senha', '#/')}
+      <section class="admin">
+        <p>Bem-vindo, <b>${escapar(situacao.usuario.nome || situacao.usuario.email)}</b>. Você já está
+        dentro — o link do e-mail abriu a sessão.</p>
+        <p class="mini">Crie uma senha para entrar direto das próximas vezes, sem precisar do
+        e-mail. Pelo menos 6 caracteres.</p>
+        <label for="nu-nova-senha">Senha</label>
+        <input id="nu-nova-senha" type="password" autocomplete="new-password" maxlength="72">
+        <label for="nu-nova-senha2">Repita a senha</label>
+        <input id="nu-nova-senha2" type="password" autocomplete="new-password" maxlength="72">
+        <div class="acoes">
+          <button class="botao grande" data-acao="adm:nuvem-criar-senha">Salvar a senha</button>
+          <button class="botao secundario" data-acao="adm:nuvem-pular-senha">Agora não</button>
+        </div>
+        ${situacao.recado ? `<p class="mini">${escapar(situacao.recado)}</p>` : ''}
+      </section>`;
   }
 
   const u = situacao.usuario;
@@ -9555,7 +9642,7 @@ function acaoPainel(acao, botao) {
     botao.disabled = true;
 
     if (nome === 'nuvem-entrar') {
-      const email = campo('nu-email');
+      const email = campo('nu-email-senha');
       const senha = campo('nu-senha');
       if (!email || !senha) return falhar('Informe e-mail e senha.'), true;
       nuvem.entrar(email, senha).then((r) => {
@@ -9574,27 +9661,35 @@ function acaoPainel(acao, botao) {
       return true;
     }
 
-    if (nome === 'nuvem-cadastrar') {
+    if (nome === 'nuvem-link') {
       const email = campo('nu-email');
-      const senha = campo('nu-senha');
-      const quem = campo('nu-nome');
-      if (!email || senha.length < 6) return falhar('Informe o e-mail e uma senha de pelo menos 6 caracteres.'), true;
-      if (!quem) return falhar('Informe o nome.'), true;
-      nuvem.cadastrar(email, senha, quem).then((r) => {
+      nuvem.enviarLinkDeAcesso(email).then((r) => {
         if (!r.ok) return falhar(r.erro);
-        if (r.confirmar) {
-          aguardandoConfirmacao = email;
-          botao.disabled = false;
-          return desenhar();
-        }
-        const p = r.perfil || {};
-        const anterior = JSON.parse(banco.exportar());
-        editavel.entrarComSessaoDaNuvem({ id: p.id, nome: p.nome, perfil: p.perfil });
-        return sincronia.adotarConta(p, anterior).then(() => {
-          if (p.nome) banco.definirAluno(p.nome);
-          terminar();
-        });
-      }).catch((erro) => falhar(erro.message || 'Não deu para criar a conta.'));
+        linkEnviadoPara = email;
+        recado(`Link enviado para ${email}. Abra a mensagem e clique.`);
+        terminar();
+      }).catch((erro) => falhar(erro.message || 'Não deu para enviar o link.'));
+      return true;
+    }
+
+    if (nome === 'nuvem-criar-senha') {
+      const senha = campo('nu-nova-senha');
+      const repetida = campo('nu-nova-senha2');
+      if (senha !== repetida) return falhar('As duas senhas não são iguais.'), true;
+      nuvem.definirSenha(senha).then((r) => {
+        if (!r.ok) return falhar(r.erro);
+        criandoSenha = false;
+        recado('Senha criada. Da próxima vez dá para entrar direto por ela.');
+        ir('#/');
+        terminar();
+      }).catch((erro) => falhar(erro.message || 'Não deu para criar a senha.'));
+      return true;
+    }
+
+    if (nome === 'nuvem-pular-senha') {
+      criandoSenha = false;
+      ir('#/');
+      terminar();
       return true;
     }
 
@@ -9623,15 +9718,6 @@ function acaoPainel(acao, botao) {
         auditoria.registrar(auditoria.ACOES.PUBLICAR_METODO, { entidade: 'nuvem', detalhes: 'conteúdo publicado no servidor' });
         terminar();
       }).catch((erro) => falhar(erro.message || 'Não deu para publicar.'));
-      return true;
-    }
-
-    if (nome === 'nuvem-reenviar') {
-      nuvem.reenviarConfirmacao(aguardandoConfirmacao).then((r) => {
-        if (!r.ok) return falhar(r.erro);
-        recado('E-mail reenviado. Confira também a caixa de spam.');
-        terminar();
-      }).catch((erro) => falhar(erro.message || 'Não deu para reenviar.'));
       return true;
     }
 
@@ -10402,6 +10488,42 @@ document.addEventListener('change', mudancas);
 window.addEventListener('hashchange', desenhar);
 window.addEventListener('DOMContentLoaded', desenhar);
 if (document.readyState !== 'loading') desenhar();
+
+// Volta do link enviado por e-mail. Os tokens chegam no endereço, depois do
+// `#`; aqui eles viram sessão, o progresso deste aparelho vai junto para a
+// conta, e a pessoa cai na tela de criar a senha.
+//
+// Vale para as duas situações: o link abre o app do zero (o caso comum) ou cai
+// numa aba que já estava aberta — aí o endereço muda sem recarregar nada, e só
+// o `hashchange` avisa.
+let tratandoRetorno = false;
+
+function tratarRetornoDoEmail() {
+  if (tratandoRetorno) return;
+  const pedaco = window.location.hash.slice(1);
+  if (!pedaco.includes('access_token=') && !pedaco.includes('error')) return;
+  tratandoRetorno = true;
+  nuvem.capturarRetornoDeEmail().then((r) => {
+    if (!r) return null;
+    if (!r.ok) { recado(r.erro); desenhar(); return null; }
+    const p = r.perfil || {};
+    const anterior = JSON.parse(banco.exportar());
+    editavel.entrarComSessaoDaNuvem({ id: p.id, nome: p.nome, perfil: p.perfil });
+    auditoria.registrar(auditoria.ACOES.LOGIN, { entidade: 'conta', entidadeId: p.id || '', detalhes: 'link por e-mail' });
+    criandoSenha = true;
+    linkEnviadoPara = '';
+    return sincronia.adotarConta(p, anterior).then(() => {
+      if (p.nome) banco.definirAluno(p.nome);
+      ir('#/nuvem');
+      desenhar();
+    });
+  }).catch((erro) => {
+    console.warn('Retorno do e-mail:', erro);
+  }).then(() => { tratandoRetorno = false; });
+}
+
+window.addEventListener('hashchange', tratarRetornoDoEmail);
+tratarRetornoDoEmail();
 
 // Ao abrir: se este app estiver ligado a um banco e houver sessão, busca o
 // conteúdo e sobe o progresso. Falha de rede aqui não pode travar nada — o
